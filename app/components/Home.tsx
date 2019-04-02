@@ -1,20 +1,16 @@
-import * as React from 'react';
-import { Component } from 'react';
-import { Link } from 'react-router-dom';
-const routes = require('../constants/routes.json');
-const styles = require('./Home.css');
+import * as React from 'react'
+import { Link } from 'react-router-dom'
 
-type Props = {};
+const routes = require('../constants/routes.json')
+const styles = require('./Home.css')
 
-export default class Home extends Component<Props> {
-  props: Props;
+type Props = {}
 
-  render() {
-    return (
-      <div className={styles.container} data-tid="container">
-        <h2>Home</h2>
-        <Link to={routes.COUNTER}>to Counter</Link>
-      </div>
-    );
-  }
-}
+const Home = (props: Props) => (
+  <div className={styles.container} data-tid="container">
+    <h2>Home</h2>
+    <Link to={routes.COUNTER}>to Counter</Link>
+  </div>
+)
+
+export default Home

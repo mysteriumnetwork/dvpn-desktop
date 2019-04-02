@@ -1,11 +1,8 @@
 module.exports = {
-  overrides: [
-    {
-      files: ['.prettierrc', '.babelrc', '.eslintrc', '.stylelintrc'],
-      options: {
-        parser: 'json'
-      }
-    }
-  ],
-  singleQuote: true
+  printWidth: 110,
+  singleQuote: true,
+  useTabs: false,
+  tabWidth: 2,
+  trailingComma: 'all',
+  semi: false
 };
