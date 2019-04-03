@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
+import { NAV_COUNTER } from '../../../counter/counter.navlink'
 
-const routes = require('../constants/routes.json')
 const styles = require('./Home.css')
 
 type Props = {}
@@ -9,7 +9,7 @@ type Props = {}
 const Home = (props: Props) => (
   <div className={styles.container} data-tid="container">
     <h2>Home</h2>
-    <Link to={routes.COUNTER}>to Counter</Link>
+    <Link to={NAV_COUNTER.path}>to Counter</Link>
   </div>
 )
 

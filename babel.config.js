@@ -33,7 +33,7 @@ module.exports = api => {
     ],
     plugins: [
       require('@babel/plugin-proposal-function-bind'),
-      [require('@babel/plugin-proposal-class-properties'), { loose: true }],
+      [require('@babel/plugin-proposal-class-properties'), { loose: false }],
 
       ...(development ? developmentPlugins : productionPlugins),
     ],

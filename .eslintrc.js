@@ -5,12 +5,13 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  extends: ['airbnb', 'prettier', 'prettier/react', 'prettier/@typescript-eslint'],
+  extends: ['airbnb', 'prettier', 'prettier/react', 'prettier/@typescript-eslint', 'plugin:testcafe/recommended'],
   env: {
     browser: true,
     node: true,
+    jest: true,
   },
-  plugins: ['import', 'promise', 'compat', 'react', 'prettier', '@typescript-eslint'],
+  plugins: ['import', 'promise', 'compat', 'react', 'prettier', '@typescript-eslint', 'testcafe'],
   settings: {
     'import/resolver': {
       webpack: {
@@ -26,5 +27,7 @@ module.exports = {
     'import/default': 'off',
     'no-unused-vars': 'off',
     'prettier/prettier': ['error', { parser: 'typescript' }],
+    'import/no-extraneous-dependencies': [2, { 'devDependencies': true }],
+    'react/destructuring-assignment': 'off',
   },
 }

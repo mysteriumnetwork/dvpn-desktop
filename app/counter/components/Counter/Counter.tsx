@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
+import { NAV_HOME } from '../../../home/home.navlink'
 
-const routes = require('../constants/routes.json')
 const styles = require('./Counter.css')
 
-type Props = {
+type CounterProps = {
   increment: () => void
   incrementIfOdd: () => void
   incrementAsync: () => void
@@ -12,12 +12,12 @@ type Props = {
   counter: number
 }
 
-const Counter = (props: Props) => {
+const Counter = (props: CounterProps) => {
   const { increment, incrementIfOdd, incrementAsync, decrement, counter } = props
   return (
     <div>
       <div className={styles.backButton} data-tid="backButton">
-        <Link to={routes.HOME}>
+        <Link to={NAV_HOME.path}>
           <i className="fa fa-arrow-left fa-3x" />
         </Link>
       </div>

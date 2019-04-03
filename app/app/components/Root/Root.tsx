@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Provider } from 'react-redux'
 import { ConnectedRouter } from 'connected-react-router'
 import { History } from 'history'
-import Routes from '../Routes'
+import App from '../App/App'
 
 type Props = {
   store: any
@@ -14,7 +14,7 @@ const Root = (props: Props) => {
   return (
     <Provider store={store}>
       <ConnectedRouter history={history}>
-        <Routes />
+        <App />
       </ConnectedRouter>
     </Provider>
   )
