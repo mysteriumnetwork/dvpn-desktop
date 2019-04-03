@@ -25,6 +25,7 @@ module.exports = api => {
         {
           targets: { electron: require('electron/package.json').version },
           useBuiltIns: 'usage',
+          corejs: '3.0.0',
         },
       ],
       require('@babel/preset-typescript'),
