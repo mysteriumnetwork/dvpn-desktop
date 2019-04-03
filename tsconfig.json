@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "baseUrl": "./",
     "rootDir": "./",
     "jsx": "react",
-    "module": "es2015",
+    "module": "es6",
     "moduleResolution": "node",
     "noUnusedLocals": true,
     "pretty": true,
     "sourceMap": true,
     "resolveJsonModule": true,
-    "lib": ["es2015", "dom"]
+    "lib": ["es6", "dom"]
   },
   "exclude": ["node_modules", "**/node_modules/*"]
 }
