@@ -44,7 +44,7 @@
     "postlint-fix": "prettier --ignore-path .eslintignore --single-quote --write '**/*.{*{js,jsx,json},babelrc,eslintrc,prettierrc,stylelintrc}'",
     "postlint-styles-fix": "prettier --ignore-path .eslintignore --single-quote --write '**/*.{css,scss}'",
     "prestart": "yarn build",
-    "start": "cross-env NODE_ENV=production electron ./app/main.prod.js",
+    "start": "cross-env NODE_ENV=production electron ./dist/main.prod.js",
     "start-main-dev": "cross-env HOT=1 NODE_ENV=development electron ./app/main.dev.babel.js",
     "start-renderer-dev": "cross-env NODE_ENV=development webpack-dev-server --config configs/webpack.config.renderer.dev.babel.js",
     "test": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 jest",
@@ -73,15 +73,12 @@
       "git add"
     ]
   },
-  "main": "./app/main.prod.js",
+  "main": "./dist/main.prod.js",
   "build": {
     "productName": "MysteriumVPN",
     "appId": "network.mysterium.MysteriumVPN",
     "files": [
-      "app/dist/",
-      "app/app.html",
-      "app/main.prod.js",
-      "app/main.prod.js.map",
+      "dist/",
       "package.json"
     ],
     "dmg": {
@@ -185,6 +182,7 @@
     "chalk": "^2.4.1",
     "concurrently": "^4.1.0",
     "connected-react-router": "^6.1.0",
+    "copy-webpack-plugin": "^5.0.2",
     "cross-env": "^5.2.0",
     "cross-spawn": "^6.0.5",
     "css-loader": "^2.1.0",

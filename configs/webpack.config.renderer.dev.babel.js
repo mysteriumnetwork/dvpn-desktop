@@ -51,7 +51,7 @@ export default merge.smart(baseConfig, {
   ],
 
   output: {
-    publicPath: `http://localhost:${port}/dist/`,
+    publicPath: `http://localhost:${port}/`,
     filename: 'renderer.dev.js',
   },
 
@@ -227,7 +227,6 @@ export default merge.smart(baseConfig, {
 
   devServer: {
     port,
-    publicPath,
     compress: true,
     noInfo: true,
     stats: 'errors-only',
@@ -235,7 +234,6 @@ export default merge.smart(baseConfig, {
     lazy: false,
     hot: true,
     headers: { 'Access-Control-Allow-Origin': '*' },
-    contentBase: path.join(__dirname, 'dist'),
     watchOptions: {
       aggregateTimeout: 300,
       ignored: /node_modules/,

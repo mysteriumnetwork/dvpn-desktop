@@ -4,6 +4,7 @@
 
 import path from 'path'
 import webpack from 'webpack'
+import CopyPlugin from 'copy-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin'
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
@@ -23,8 +24,8 @@ export default merge.smart(baseConfig, {
   entry: path.join(__dirname, '..', 'app/index'),
 
   output: {
-    path: path.join(__dirname, '..', 'app/dist'),
-    publicPath: './dist/',
+    path: path.join(__dirname, '..', 'dist'),
+    publicPath: './',
     filename: 'renderer.prod.js',
   },
 
@@ -201,6 +202,8 @@ export default merge.smart(baseConfig, {
     new webpack.EnvironmentPlugin({
       NODE_ENV: 'production',
     }),
+
+    new CopyPlugin([{ from: 'app/app.html', to: 'app.html' }]),
 
     new MiniCssExtractPlugin({
       filename: 'style.css',
