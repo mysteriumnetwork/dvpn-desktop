@@ -2,10 +2,16 @@ module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 6,
     sourceType: 'module',
   },
-  extends: ['airbnb', 'prettier', 'prettier/react', 'prettier/@typescript-eslint', 'plugin:testcafe/recommended'],
+  extends: [
+    'airbnb',
+    'prettier',
+    'prettier/react',
+    'prettier/@typescript-eslint',
+    'plugin:testcafe/recommended',
+  ],
   env: {
     browser: true,
     node: true,
@@ -27,7 +33,7 @@ module.exports = {
     'import/default': 'off',
     'no-unused-vars': 'off',
     'prettier/prettier': ['error', { parser: 'typescript' }],
-    'import/no-extraneous-dependencies': [2, { 'devDependencies': true }],
+    'import/no-extraneous-dependencies': [2, { devDependencies: true }],
     'react/destructuring-assignment': 'off',
   },
 }
