@@ -1,6 +1,6 @@
 # Mysterium VPN desktop client
 
-[![Build Status](https://travis-ci.com/mysteriumnetwork/mysterium-desktop.svg?branch=master)](https://travis-ci.com/mysteriumnetwork/mysterium-desktop)
+[![Build Status](https://travis-ci.com/mysteriumnetwork/dvpn-desktop.svg?branch=master)](https://travis-ci.com/mysteriumnetwork/mysterium-desktop)
 
 Mysterium VPN is a desktop application for accessing Mysterium Network - decentralized VPN built on blockchain.
 

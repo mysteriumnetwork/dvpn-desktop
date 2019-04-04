@@ -1,0 +1,24 @@
+.appHeader {
+  background: #d2d2d2;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.tabContainer {
+  border-radius: 5px;
+  background: #f8f8f8;
+  display: flex;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 1.5rem;
+}
+
+.tab:active {
+  background: #773773;
+}

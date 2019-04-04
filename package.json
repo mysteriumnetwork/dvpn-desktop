@@ -1,21 +1,21 @@
 {
-  "name": "mysterium-desktop",
+  "name": "dvpn-desktop",
   "productName": "MysteriumVPN",
   "version": "0.10.0",
   "description": "Mysterium VPN is a desktop application for accessing Mysterium Network - decentralized VPN built on blockchain.",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mysteriumnetwork/mysterium-desktop.git"
+    "url": "git+https://github.com/mysteriumnetwork/dvpn-desktop.git"
   },
   "author": {
     "name": "Mysterium Network",
     "email": "mysterium-dev@mysterium.network",
     "url": "https://mysterium.network/"
   },
-  "homepage": "https://github.com/mysteriumnetwork/mysterium-desktop#readme",
+  "homepage": "https://github.com/mysteriumnetwork/dvpn-desktop#readme",
   "bugs": {
-    "url": "https://github.com/mysteriumnetwork/mysterium-desktop/issues"
+    "url": "https://github.com/mysteriumnetwork/dvpn-desktop/issues"
   },
   "keywords": [
     "mysterium",
@@ -116,7 +116,7 @@
     "publish": {
       "provider": "github",
       "owner": "mysteriumnetwork",
-      "repo": "mysterium-desktop",
+      "repo": "dvpn-desktop",
       "private": false
     }
   },
@@ -229,6 +229,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.6.3",
+    "classnames": "^2.2.6",
     "devtron": "^1.4.0",
     "electron-debug": "^2.0.0",
     "electron-log": "^2.2.17",

@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Provider } from 'react-redux'
 import { ConnectedRouter } from 'connected-react-router'
 import { History } from 'history'
-import App from '../App/App'
+import App from './App'
 
 type Props = {
   store: any
