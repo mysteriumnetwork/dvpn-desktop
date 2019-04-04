@@ -30,7 +30,7 @@ install:
   - yarn
 
 test_script:
-  - yarn package-ci
+  - yarn package-all
   - yarn lint
   # - yarn flow
   - yarn test
