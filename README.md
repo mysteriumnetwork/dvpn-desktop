@@ -1,6 +1,6 @@
 # Mysterium VPN: Decentralized VPN client
 
-[![Build Status](https://travis-ci.com/mysteriumnetwork/dvpn-desktop.svg?branch=master)](https://travis-ci.com/mysteriumnetwork/mysterium-desktop)
+[![Build Status](https://travis-ci.com/mysteriumnetwork/dvpn-desktop.svg?branch=master)](https://travis-ci.com/mysteriumnetwork/dvpn-desktop)
 
 ## Building
 
