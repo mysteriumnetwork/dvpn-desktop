@@ -25,9 +25,9 @@ Build package for the current platform
 $ yarn package
 ```
 
-## Code of Conduct
+## Collaboration guidelines
 
-[Read here](./CODE_OF_CONDUCT.md)
+[Read here](./COLABORATION.md)
 
 ---
 

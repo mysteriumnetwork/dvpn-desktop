@@ -1,4 +1,4 @@
-# Code of Conduct
+# Collaboration
 
 This document describes how we collaborate developing Mysterium VPN app.
 
