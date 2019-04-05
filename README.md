@@ -19,10 +19,10 @@ Run app with hot reload
 $ yarn dev
 ```
 
-Build packages for all platforms
+Build package for the current platform
 
 ```
-$ yarn package-all
+$ yarn package
 ```
 
 ## Contributing

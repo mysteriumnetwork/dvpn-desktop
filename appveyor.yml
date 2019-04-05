@@ -10,7 +10,6 @@ environment:
 cache:
   - '%LOCALAPPDATA%/Yarn'
   - node_modules
-  - flow-typed
   - '%USERPROFILE%\.electron'
 
 matrix:
@@ -30,9 +29,6 @@ install:
   - yarn
 
 test_script:
-  - yarn package-all
+  - yarn package
   - yarn lint
-  # - yarn flow
-  - yarn test
-  - yarn build-e2e
-  - yarn test-e2e
+  - yarn test-all
