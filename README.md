@@ -25,13 +25,9 @@ Build package for the current platform
 $ yarn package
 ```
 
-## Contributing
-
-// TODO
-
 ## Code of Conduct
 
-// TODO
+[Read here](./CODE_OF_CONDUCT.md)
 
 ---
 
