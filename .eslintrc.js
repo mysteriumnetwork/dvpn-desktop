@@ -35,5 +35,6 @@ module.exports = {
     'prettier/prettier': ['error', { parser: 'typescript' }],
     'import/no-extraneous-dependencies': [2, { devDependencies: true }],
     'react/destructuring-assignment': 'off',
+    'import/no-mutable-exports': 'off'
   },
 }
