@@ -29,8 +29,10 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 if (process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true') {
-  require('electron-debug')()
+  require('electron-debug')();
 }
+
+
 const installExtensions = async () => {
   // eslint-disable-next-line import/no-extraneous-dependencies
   const installer = require('electron-devtools-installer')
@@ -68,6 +70,7 @@ app.on('ready', async () => {
 
   mainWindow.loadURL(`file://${__dirname}/app.html`)
 
+
   // @TODO: Use 'ready-to-show' event
   //        https://github.com/electron/electron/blob/master/docs/api/browser-window.md#using-ready-to-show-event
   mainWindow.webContents.on('did-finish-load', () => {
@@ -80,6 +83,8 @@ app.on('ready', async () => {
       mainWindow.show()
       mainWindow.focus()
     }
+
+    mainWindow.webContents.openDevTools()
   })
 
   mainWindow.on('closed', () => {
