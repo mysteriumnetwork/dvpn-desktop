@@ -1,5 +1,15 @@
 {
   "document.title": "Mysterium",
+  "app.onboarding.welcome": "Welcome to Mysterium Network",
+  "app.onboarding.subtitle": "Connect to everything, everywhere via the World’s 1st decentralized VPN.",
+  "app.onboarding.get.started.btn": "Get Started",
+  "app.onboarding.terms.title": "Terms and conditions",
+  "app.onboarding.terms.title.1": "Consumer Terms of Service",
+  "app.onboarding.terms.title.2": "Consumer Terms of Service",
+  "app.onboarding.more.btn": "More",
+  "app.onboarding.continue.btn": "Continue",
+  "app.header.connect.vpn": "Connect to VPN",
+  "app.header.provide.vpn": "Provide VPN",
 
   "": ""
 }

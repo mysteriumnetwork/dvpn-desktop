@@ -1,0 +1,126 @@
+.appTermsCover{
+  min-height: 640px;
+  height: 100vh;
+  padding-top: 36px;
+  padding-bottom: 60px;
+  position: relative;
+  background:#fff;
+}
+.appTermsListCover{
+  max-width: 300px;
+  margin: 0 auto;
+}
+.appTermsListCover h2{
+  text-align: center;
+  font-weight:300;
+  margin-bottom: 46px;
+  font-size:24px;
+  color:#843a72;
+}
+.termsItem {
+  margin-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.termsItem h3{
+  font-weight: 600;
+  font-size: 15px;
+  color: #843a72;
+}
+.termsItemText {
+  font-size: 12px;
+  color: #333;
+  margin: 6px 0;
+}
+.termsItemText a {
+  cursor: pointer;
+  margin-left: 8px;
+  padding-right: 5px;
+  position: relative;
+  color: #843a72;
+}
+.termsItemText a::after{
+   right: -3px;
+   position: relative;
+   content: ">";
+   vertical-align: baseline;
+}
+.termsItemText a:hover{
+   border-bottom: 1px solid;
+}
+.date{
+  font-size: 12px;
+  color: #808080;
+}
+.bottomBar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+  background: #f7f7f7;
+  border-top: 1px solid rgba(191, 191, 191, 0.4);
+}
+.bottomBar div{
+  width:100%;
+  max-width:300px;
+  margin: 0 auto;
+}
+.barContent{
+  width: 680px;
+  height: 100%;
+  margin: 0 auto;
+  position:relative;
+  display: flex;
+  align-items:center;
+}
+.catMysterium{
+  position: absolute;
+  top: -150px;
+  left: -143px;
+  height: 200px;
+  width:128px;
+  display: block;
+  background:url("../../assets/images/Cat.png") no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+@media only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+  .catMysterium{
+    background:url("../../assets/images/Cat@2x.png") no-repeat;
+    background-size: contain;
+  }
+}
+
+.barContent a {
+  top: 16px;
+  right: -200px;
+  position: absolute;
+  display: block;
+  font-weight: bold;
+  min-height: 40px;
+  max-width: 114px;
+  padding:10px 17px;
+  margin: 0 auto;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: none;
+  color: #fff;
+  box-shadow: inset 0 0.3px 0.5px 0 #c25995;
+  background-image:linear-gradient(to bottom, #7c2463, #552462);
+}
+.termsAgreement {
+  display:flex;
+  justify-content: start;
+  align-items: center;
+}
+.termsAgreement input {
+  flex: 0 0.10 7%;
+}
+.termsAgreement span {
+  padding-left:8px;
+  color: #404040;
+  font-size: 14px;
+}
