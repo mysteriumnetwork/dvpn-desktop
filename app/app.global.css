@@ -2,7 +2,7 @@
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
-@import "~@fortawesome/fontawesome-free/css/all.css";
+@import '~@fortawesome/fontawesome-free/css/all.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
 * {
@@ -26,7 +26,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 p {
@@ -64,9 +64,9 @@ h5 {
   font-weight: normal;
 }
 
-
 input {
   width: 100%;
+  border: 0;
   display: block;
   font-weight: normal;
   letter-spacing: 0.05em;
@@ -77,17 +77,17 @@ input:focus {
   outline: none;
 }
 
+/* Change text in autofill textbox */
+input:-webkit-autofill {
+  -webkit-text-fill-color: #000 !important;
+}
+
 /* Change the white to any color ;) */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
-input:-webkit-autofill:active  {
+input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
-}
-
-/* Change text in autofill textbox */
-input:-webkit-autofill {
-  -webkit-text-fill-color: #000 !important;
 }
 
 button {

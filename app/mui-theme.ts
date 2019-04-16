@@ -1,7 +1,7 @@
 import { createMuiTheme } from '@material-ui/core/styles'
 
 const options: any = {
-  colors:{
+  colors: {
     blackColor: '#000000',
     whiteColor: '#ffffff',
     darkPurple: '#632462',
@@ -11,7 +11,7 @@ const options: any = {
     textMain: '#404040',
     textGrey: '#4e4e4e',
     textSecondary: '#666666',
-    textLightGrey:'#808080',
+    textLightGrey: '#808080',
     warningRed: '#d93c3c',
     successGreen: '#4cac29',
     borderColor: '#c4c4c4',
