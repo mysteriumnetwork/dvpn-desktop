@@ -1,4 +1,4 @@
-import { intl, locale } from './provider/language'
+import { intl, locale } from './language'
 
 const messages = {
   en: {},
