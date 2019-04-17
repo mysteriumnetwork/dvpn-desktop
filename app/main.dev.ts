@@ -31,6 +31,7 @@ if (process.env.NODE_ENV === 'production') {
 if (process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true') {
   require('electron-debug')()
 }
+
 const installExtensions = async () => {
   // eslint-disable-next-line import/no-extraneous-dependencies
   const installer = require('electron-devtools-installer')
@@ -80,6 +81,8 @@ app.on('ready', async () => {
       mainWindow.show()
       mainWindow.focus()
     }
+
+    mainWindow.webContents.openDevTools()
   })
 
   mainWindow.on('closed', () => {
@@ -91,5 +94,5 @@ app.on('ready', async () => {
 
   // Remove this if your app does not use auto updates
   // eslint-disable-next-line
-  new AppUpdater();
+  new AppUpdater()
 })

@@ -1,12 +1,19 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
 import { NAV_TERMS } from '../../app.links'
+import trans from '../../../trans'
+
+const styles = require('./Welcome.css')
 
 const Welcome = () => (
-  <div>
-    <p>Welcome to Mysterium Network</p>
-    <p>Connect to everything, everywhere via the World&quot;s 1st decentralized VPN</p>
-    <Link to={NAV_TERMS}>Get Started</Link>
+  <div className={styles.appCover}>
+    <div className={styles.appBgPattern} />
+    <div className={styles.appContent}>
+      <div className={styles.logo} />
+      <h1>{trans('app.onboarding.welcome')}</h1>
+      <h4>{trans('app.onboarding.subtitle')}</h4>
+      <Link to={NAV_TERMS}>{trans('app.onboarding.get.started.btn')}</Link>
+    </div>
   </div>
 )
 
