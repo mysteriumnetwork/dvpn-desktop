@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
+import { Button, FormControlLabel, Checkbox } from '@material-ui/core'
 import { NAV_PROVIDER_SETTINGS } from '../../../provider/provider.links'
 import trans from '../../../trans'
 
@@ -39,10 +40,19 @@ const Terms = () => (
         <div>
           <span className={styles.catMysterium} />
           <p className={styles.termsAgreement}>
-            <input type="checkbox" name="checkbox" value="agreeTerms" />
-            <span>{trans('app.onboarding.terms.agree.label')}</span>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  value="agreeTerms"
+                  checkedIcon={<span className="customIcon icon-checkbox-checked" />}
+                />
+              }
+              label={trans('app.onboarding.terms.agree.label')}
+            />
           </p>
-          <Link to={NAV_PROVIDER_SETTINGS}>{trans('app.onboarding.continue.btn')}</Link>
+          <Link to={NAV_PROVIDER_SETTINGS}>
+            <Button>{trans('app.onboarding.continue.btn')}</Button>
+          </Link>
         </div>
       </div>
     </div>
