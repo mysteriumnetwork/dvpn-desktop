@@ -28,6 +28,12 @@
   "app.provider.settings.connection.info.confirm": "I confirm that I understand my agreement with my ISP and asscociated risks",
   "app.provider.settings.connection.info.data.center.ip": "Data Center IP",
   "app.provider.settings.connection.info.helper.text.data.center": "It looks like you are sharing a connection from a data center.",
+  "app.menu.connection.history": "Connection History",
+  "app.menu.terms.conditions": "Terms and Conditions",
+  "app.menu.privacy.policy": "Privacy Policy",
+  "app.menu.send.feedback": "Send Feedback",
+  "app.menu.follow.us": "Follow us",
+  "app.menu.about": "About the App",
 
   "": ""
 }

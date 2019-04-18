@@ -1,0 +1,56 @@
+.menuContainer button {
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.menuContainer button:hover {
+  background: transparent;
+}
+.menuContainer ul li {
+  padding: 4px 16px;
+  font-size: 0.875rem;
+  color: #404040;
+}
+.menuContainer ul li:first-child {
+  border-bottom: 2px solid #e6e6e6;
+}
+.menuContainer ul li:last-child {
+  border-top: 2px solid #e6e6e6;
+}
+.menuContainer ul li:hover {
+  color: #fff;
+  background: #843a72;
+}
+.menuContainer ul li.followMenuItem {
+  height: auto;
+}
+.menuContainer ul li.followMenuItem:hover {
+  background: transparent;
+}
+.menuContainer ul li .followList {
+  width: 100%;
+  font-size: 0.75rem;
+  color: #666;
+}
+.menuContainer ul li .followList ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: inline-flex;
+}
+.menuContainer ul li .followList ul li {
+  padding: 5px;
+  display: inline-block;
+}
+.menuContainer ul li .followList ul li:first-child,
+.menuContainer ul li .followList ul li:last-child {
+  border: none;
+}
+.menuContainer ul li .followList ul li:hover {
+  background: transparent;
+}
+.menuContainer ul li .followList ul li a {
+  display: block;
+}

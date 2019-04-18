@@ -96,6 +96,9 @@ const options: any = {
         },
       },
     },
+    MuiButtonBase: {
+      root: {},
+    },
   },
   colors: {
     blackColor: '#000000',

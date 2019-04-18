@@ -1,3 +1,5 @@
+@import '../../../constatnts';
+
 .appCover {
   position: relative;
   min-height: 100vh;
@@ -5,9 +7,8 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to bottom, #9b2463, #312461);
+  background-image: $purpleAppBg;
 }
-
 .appBgPattern {
   opacity: 0.1;
   width: 720px;
@@ -18,28 +19,26 @@
   background-size: contain;
   background-position: center;
 }
-
 .appContent {
   max-width: 390px;
   margin: 0 auto;
   z-index: 2;
   position: relative;
+  h1 {
+    color: $whiteColor;
+    font-size: $mainTitle;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.5);
+  }
+  h4 {
+    color: $whiteColor;
+    font-size: $tableContentFont;
+    text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.5);
+    margin: 16px 0 28px;
+  }
 }
-.appContent h1 {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 0.01em;
-  text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.5);
-}
-.appContent h4 {
-  color: #fff;
-  font-size: 1rem;
-  text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.5);
-  margin: 16px 0 28px;
-}
-
 .logo {
   height: 156px;
   width: 240px;
@@ -48,13 +47,11 @@
   background-size: contain;
   background-position: center;
 }
-
 @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .appBgPattern {
     background: url('./assets/images/app-bg@2x.png') no-repeat;
     background-size: contain;
   }
-
   .logo {
     background: url('./assets/images/Logo@2x.png') no-repeat;
     background-size: contain;

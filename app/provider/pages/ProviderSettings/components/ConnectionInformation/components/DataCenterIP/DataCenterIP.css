@@ -1,8 +1,3 @@
-.appConnectionTitle {
-  font-size: 0.875rem;
-  color: #808080;
-}
-
 .connectionFlexedRow {
   display: flex;
   margin-bottom: 16px;
@@ -12,13 +7,20 @@
   font-size: 0.875rem;
   padding-left: 16px;
 }
-.connectionFlexedRow .connectionDetails a {
+
+.textBold {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.connectionDetails a {
   color: #843a72;
   font-size: 0.75rem;
   display: block;
 }
 
-.textBold {
-  font-weight: bold;
-  margin-right: 8px;
+.helperText {
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: #808080;
 }

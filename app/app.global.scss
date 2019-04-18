@@ -4,7 +4,11 @@
  */
 
 /* @import '~@fortawesome/fontawesome-free/css/all.css'; */
+
+@import 'constatnts';
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
 * {
   margin: 0;
   text-decoration: none;
@@ -20,7 +24,7 @@ body {
   position: relative;
   color: #333;
   height: 100vh;
-  background-image: linear-gradient(to bottom, #9b2463, #312461);
+  background-image: $purpleAppBg;
   overflow-y: hidden;
   margin: 0;
   padding: 0;
@@ -55,7 +59,6 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
-
 h1,
 h2,
 h3,
@@ -90,7 +93,6 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
-
 button {
   border: none;
   outline: none;
@@ -105,11 +107,9 @@ button {
   background: url('app/components/assets/images/control-icons.svg') no-repeat;
   background-size: 85px 32px;
 }
-
 .icon-radio-checked {
   background-position: 0 0;
 }
-
 .icon-checkbox-checked {
   background-position: 0 -16px;
 }
@@ -122,67 +122,51 @@ button {
   background: url('app/components/assets/images/app-icons.svg') no-repeat;
   background-size: 184px 232px;
 }
-
 .residentialIPIcon {
   background-position: -112px -40px;
 }
-
 .dataCenterIPIcon {
   background-position: -112px -80px;
 }
-
 .appMenuIcon {
   background-position: -1px 0;
 }
-
 .appMenuIcon:hover {
   background-position: -33px 0;
 }
-
 .telegram {
   background-position: -1px -176px;
 }
-
 .telegram:hover {
   background-position: -1px -208px;
 }
-
 .medium {
   background-position: -33px -176px;
 }
-
 .medium:hover {
   background-position: -33px -208px;
 }
-
 .tweeter {
   background-position: -65px -176px;
 }
-
 .tweeter:hover {
   background-position: -65px -208px;
 }
-
 .reddit {
   background-position: -97px -176px;
 }
-
 .reddit:hover {
   background-position: -97px -208px;
 }
-
 .facebook {
   background-position: -129px -176px;
 }
-
 .facebook:hover {
   background-position: -129px -208px;
 }
-
 .github {
   background-position: -161px -176px;
 }
-
 .github:hover {
   background-position: -161px -176px;
 }

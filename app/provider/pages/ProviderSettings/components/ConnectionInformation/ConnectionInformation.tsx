@@ -1,13 +1,9 @@
 import * as React from 'react'
-import {
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
-  FormControlLabel,
-  Checkbox,
-} from '@material-ui/core'
+import { ExpansionPanel, ExpansionPanelSummary, ExpansionPanelDetails } from '@material-ui/core'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMoreRounded'
 import trans from '../../../../../trans'
+import ResidentialIP from './components/ResidentialIP/ResidentialIP'
+import DataCenterIP from './components/DataCenterIP/DataCenterIP'
 
 const styles = require('./ConnectionInformation.css')
 
@@ -31,43 +27,9 @@ const ConnectionInformation = () => (
           </div>
         </div>
         {/* markup for Residential IP */}
-        <div className={styles.connectionFlexedRow}>
-          <div className="app-icons residentialIPIcon" />
-          <div className={styles.connectionDetails}>
-            <p>
-              <span className={styles.textBold}>
-                {trans('app.provider.settings.connection.info.residential.ip')}
-              </span>
-            </p>
-            <p className={styles.helperText}>{trans('app.provider.settings.connection.info.helper.text')}</p>
-            <span className={styles.checkbox}>
-              <FormControlLabel
-                control={
-                  <Checkbox
-                    value="confirm"
-                    checkedIcon={<span className="customIcon icon-checkbox-checked" />}
-                  />
-                }
-                label={trans('app.provider.settings.connection.info.confirm')}
-              />
-            </span>
-          </div>
-        </div>
+        <ResidentialIP />
         {/* markup for Data Center IP */}
-        <div className={styles.connectionFlexedRow}>
-          <div className="app-icons dataCenterIPIcon" />
-          <div className={styles.connectionDetails}>
-            <p>
-              <span className={styles.textBold}>
-                {trans('app.provider.settings.connection.info.data.center.ip')}
-              </span>
-            </p>
-            <p className={styles.helperText}>
-              {trans('app.provider.settings.connection.info.helper.text.data.center')}
-            </p>
-            <a href="/">{trans('app.provider.settings.connection.info.change')}</a>
-          </div>
-        </div>
+        <DataCenterIP />
       </ExpansionPanelDetails>
     </ExpansionPanel>
   </div>
