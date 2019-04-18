@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,OAAQ;EACN,OAAO,EAAE,IAAI;EACb,SAAE;IACA,WAAW,EAAE,GAAG",
+"sources": ["UserItem.scss"],
+"names": [],
+"file": "UserItem.css"
+}
