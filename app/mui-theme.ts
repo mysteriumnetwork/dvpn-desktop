@@ -21,6 +21,19 @@ const options: any = {
         boxShadow: 'inset 0 0.3px 0.5px 0 #c25995',
         background: 'linear-gradient(to bottom, #7c2463, #552462)',
       },
+      contained: {
+        color: '#d93c3c',
+        minHeight: 40,
+        minWidth: 216,
+        paddingRight: 20,
+        paddingLeft: 20,
+        borderRadius: 4,
+        fontWeight: 'bold',
+        textTransform: 'none',
+        boxShadow: '0 0.3px 0.3px 0 rgba(0, 0, 0, 0.15)',
+        border: 'solid 0.3px rgba(0, 0, 0, 0.1)',
+        backgroundImage: 'linear-gradient(to bottom, #fefefe, #f2f2f2)',
+      },
     },
     MuiRadio: {
       root: {
@@ -98,6 +111,12 @@ const options: any = {
     },
     MuiButtonBase: {
       root: {},
+    },
+    MuiPopover: {
+      paper: {
+        boxShadow:
+          '0px 5px 5px -3px rgba(0,0,0,0.2), 0px 4px 8px 1px rgba(0,0,0,0.05), 0px 3px 14px 1px rgba(0,0,0,0.08) !important',
+      },
     },
   },
   colors: {

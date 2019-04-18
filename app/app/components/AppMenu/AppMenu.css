@@ -7,50 +7,57 @@
 .menuContainer button:hover {
   background: transparent;
 }
-.menuContainer ul li {
-  padding: 4px 16px;
+
+li.menuItem {
   font-size: 0.875rem;
   color: #404040;
+  padding: 4px 16px;
 }
-.menuContainer ul li:first-child {
+li.menuItem:first-child {
   border-bottom: 2px solid #e6e6e6;
 }
-.menuContainer ul li:last-child {
+li.menuItem:last-child {
   border-top: 2px solid #e6e6e6;
 }
-.menuContainer ul li:hover {
+li.menuItem:focus {
+  background: transparent;
+}
+li.menuItem:hover {
   color: #fff;
   background: #843a72;
 }
-.menuContainer ul li.followMenuItem {
+
+li.followMenuItem {
+  padding: 4px 16px;
   height: auto;
 }
-.menuContainer ul li.followMenuItem:hover {
+li.followMenuItem:hover {
   background: transparent;
 }
-.menuContainer ul li .followList {
+
+.followList {
   width: 100%;
   font-size: 0.75rem;
   color: #666;
 }
-.menuContainer ul li .followList ul {
+.followList ul {
   margin: 0;
   padding: 0;
   width: 100%;
   list-style: none;
   display: inline-flex;
 }
-.menuContainer ul li .followList ul li {
+.followList ul li {
   padding: 5px;
   display: inline-block;
 }
-.menuContainer ul li .followList ul li:first-child,
-.menuContainer ul li .followList ul li:last-child {
+.followList ul li:first-child,
+.followList ul li:last-child {
   border: none;
 }
-.menuContainer ul li .followList ul li:hover {
+.followList ul li:hover {
   background: transparent;
 }
-.menuContainer ul li .followList ul li a {
+.followList ul li a {
   display: block;
 }

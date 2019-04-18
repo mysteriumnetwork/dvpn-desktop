@@ -34,6 +34,18 @@
   "app.menu.send.feedback": "Send Feedback",
   "app.menu.follow.us": "Follow us",
   "app.menu.about": "About the App",
+  "app.node.running.users.connected": " users connected",
+  "app.node.running.successful.connections": " successful connections",
+  "app.node.running.attempted": " attempted",
+  "app.node.running.uptime": "Uptime",
+  "app.node.running.downloaded": "Downloaded",
+  "app.node.running.uploaded": "Uploaded",
+  "app.node.running.quality": "Quality",
+  "app.node.running.external.ip": "External IP",
+  "app.node.running.server.id": "Server ID",
+  "app.node.running.user": "User",
+  "app.node.running.duration": "Duration",
+  "app.provider.settings.change": "Change",
 
   "": ""
 }

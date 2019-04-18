@@ -187,11 +187,43 @@ button {
   background-position: -161px -176px;
 }
 
+.quality-1 {
+  background-position: 1px -140px;
+}
+
+.quality-2 {
+  background-position: -27px -176px;
+}
+
+.quality-3 {
+  background-position: -55px -176px;
+}
+
+.quality-4 {
+  background-position: -83px -176px;
+}
+
+.quality-1-colored {
+  background-position: 1px -116px;
+}
+
+.quality-2-colored {
+  background-position: -27px -116px;
+}
+
+.quality-3-colored {
+  background-position: -55px -116px;
+}
+
+.quality-4-colored {
+  background-position: -83px -116px;
+}
+
 /* Flag icons sprite - will be done on next stage */
 
 /* temporary visualisation */
 .flag-icon {
   width: 24px;
   height: 24px;
-  background: lightgray;
+  background: url('app/components/assets/images/flag-icon-temp.svg') no-repeat;
 }

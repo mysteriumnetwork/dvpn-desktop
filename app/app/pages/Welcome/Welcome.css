@@ -14,7 +14,7 @@
   height: 456px;
   z-index: 1;
   position: absolute;
-  background: url('./assets/images/app-bg.png') no-repeat;
+  background: url('../../components/assets/images/app-bg.png') no-repeat;
   background-size: contain;
   background-position: center;
 }
@@ -44,19 +44,14 @@
   height: 156px;
   width: 240px;
   margin: 0 auto 0;
-  background: url('./assets/images/Logo.png') no-repeat;
+  background: url('../../components/assets/images/logo.svg') no-repeat;
   background-size: contain;
   background-position: center;
 }
 
 @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .appBgPattern {
-    background: url('./assets/images/app-bg@2x.png') no-repeat;
-    background-size: contain;
-  }
-
-  .logo {
-    background: url('./assets/images/Logo@2x.png') no-repeat;
+    background: url('../../components/assets/images/app-bg@2x.png') no-repeat;
     background-size: contain;
   }
 }
