@@ -46,6 +46,8 @@
   "app.node.running.user": "User",
   "app.node.running.duration": "Duration",
   "app.provider.settings.change": "Change",
+  "app.connection.history.client": "Client",
+  "app.connection.history.started": "Started",
 
   "": ""
 }

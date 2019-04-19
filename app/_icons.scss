@@ -1,18 +1,3 @@
-/*
- * @NOTE: Prepend a `~` to css file paths that are in your node_modules
- *        See https://github.com/webpack-contrib/sass-loader#imports
- */
-
-/* Flag icons sprite - will be done on next stage */
-
-/* temporary visualisation */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-.flag-icon {
-  width: 24px;
-  height: 24px;
-  background: url('app/components/assets/images/flag-icon-temp.svg') no-repeat;
-}
-
 /* Custom icons for checkbox and radiobutton */
 .customIcon {
   height: 16px;
@@ -20,11 +5,9 @@
   background: url('app/components/assets/images/control-icons.svg') no-repeat;
   background-size: 85px 32px;
 }
-
 .icon-radio-checked {
   background-position: 0 0;
 }
-
 .icon-checkbox-checked {
   background-position: 0 -16px;
 }
@@ -37,194 +20,78 @@
   background: url('app/components/assets/images/app-icons.svg') no-repeat;
   background-size: 184px 232px;
 }
-
 .residentialIPIcon {
   background-position: -112px -40px;
 }
-
 .dataCenterIPIcon {
   background-position: -112px -80px;
 }
-
 .appMenuIcon {
   background-position: -1px 0;
 }
-
 .appMenuIcon:hover {
   background-position: -33px 0;
 }
-
 .telegram {
   background-position: -1px -176px;
 }
-
 .telegram:hover {
   background-position: -1px -208px;
 }
-
 .medium {
   background-position: -33px -176px;
 }
-
 .medium:hover {
   background-position: -33px -208px;
 }
-
 .tweeter {
   background-position: -65px -176px;
 }
-
 .tweeter:hover {
   background-position: -65px -208px;
 }
-
 .reddit {
   background-position: -97px -176px;
 }
-
 .reddit:hover {
   background-position: -97px -208px;
 }
-
 .facebook {
   background-position: -129px -176px;
 }
-
 .facebook:hover {
   background-position: -129px -208px;
 }
-
 .github {
   background-position: -161px -176px;
 }
-
 .github:hover {
   background-position: -161px -176px;
 }
-
 .quality-1 {
   background-position: 1px -140px;
 }
-
 .quality-2 {
   background-position: -27px -176px;
 }
-
 .quality-3 {
   background-position: -55px -176px;
 }
-
 .quality-4 {
   background-position: -83px -176px;
 }
-
 .quality-1-colored {
   background-position: 1px -116px;
 }
-
 .quality-2-colored {
   background-position: -27px -116px;
 }
-
 .quality-3-colored {
   background-position: -55px -116px;
 }
-
 .quality-4-colored {
   background-position: -83px -116px;
 }
-
 .close-icon {
   background-position: -108px 4px;
-}
-
-* {
-  margin: 0;
-  text-decoration: none;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-body {
-  position: relative;
-  color: #333;
-  height: 100vh;
-  background-image: linear-gradient(to bottom, #9b2463, #312461);
-  overflow-y: hidden;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-p {
-  font-size: 14px;
-}
-
-li {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:focus {
-  border: none;
-  outline: none;
-}
-
-a:hover {
-  opacity: 1;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: normal;
-}
-
-input {
-  width: 100%;
-  border: 0;
-  display: block;
-  font-weight: normal;
-  letter-spacing: 0.05em;
-}
-
-input:focus {
-  outline: none;
-  box-shadow: 0 0 0 1.5px rgba(145, 78, 128, 0.29), 0 0 0 0.5px #914e80, inset 0 0.5px 1.5px 0 #ccc,
-    inset 0 0 0.5px 0 #333;
-}
-
-/* Change text in autofill textbox */
-input:-webkit-autofill {
-  -webkit-text-fill-color: #000 !important;
-}
-
-/* Change the white to any color ;) */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px white inset !important;
-}
-
-button {
-  border: none;
-  outline: none;
 }

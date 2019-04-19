@@ -6,12 +6,14 @@ import { NAV_TERMS, NAV_WELCOME } from '../../app.links'
 import AppHeader from '../AppHeader/AppHeader'
 import Terms from '../../pages/Terms/Terms'
 import Welcome from '../../pages/Welcome/Welcome'
+import ConnectionHistory from '../ConnectionHistory/ConnectionHistory'
 
 const mainRoutes: RouteDef[] = [...providerRoutes]
 
 const Main = () => (
   <div>
     <AppHeader />
+    <ConnectionHistory />
     {mainRoutes.map(route => {
       return <Route exact key={route.path} path={route.path} component={route.component} />
     })}
