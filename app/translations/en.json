@@ -46,6 +46,15 @@
   "app.node.running.user": "User",
   "app.node.running.duration": "Duration",
   "app.provider.settings.change": "Change",
+  "app.connection.history.client": "Client",
+  "app.connection.history.provider": "Provider",
+  "app.connection.history.started": "Started",
+  "app.connection.history.as.client": "As Client",
+  "app.connection.history.as.provider": "As Provider",
+  "app.about.title": "mysterium network",
+  "app.about.app.version": "App version",
+  "app.about.checked.for.updates": "Checked for updates yesterday.",
+  "app.about.check.for.updates": "Check for Updates",
 
   "": ""
 }

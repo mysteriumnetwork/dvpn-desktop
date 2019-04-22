@@ -134,6 +134,10 @@
   background-position: -83px -116px;
 }
 
+.close-icon {
+  background-position: -108px 4px;
+}
+
 * {
   margin: 0;
   text-decoration: none;
