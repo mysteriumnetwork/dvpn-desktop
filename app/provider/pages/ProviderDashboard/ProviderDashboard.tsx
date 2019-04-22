@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from '@material-ui/core'
 import { NAV_PROVIDER_SETTINGS } from '../../provider.links'
 import trans from '../../../trans'
+import Button from '../../../ui-kit/components/Button/Button'
 import BottomBar from './components/BottomBar/BottomBar'
 import ConnectionInfo from './components/ConnectionInfo/ConnectionInfo'
 import UsersList from './components/UsersList/UsersList'
@@ -21,7 +21,9 @@ const ProviderDashboard = () => (
         </p>
       </h4>
       <Link to={NAV_PROVIDER_SETTINGS}>
-        <Button variant="contained">Disconnect</Button>
+        <Button variant="contained" color="secondary">
+          Disconnect
+        </Button>
       </Link>
     </div>
     <ConnectionInfo />

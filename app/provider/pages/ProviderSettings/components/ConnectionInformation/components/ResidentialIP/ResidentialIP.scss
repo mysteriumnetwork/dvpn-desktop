@@ -26,26 +26,4 @@
 .checkbox {
   display: block;
   margin: 12px 0;
-  input {
-    color: $textLightGrey;
-    font-size: $tableHeadFont;
-    padding: 4px 12px;
-    border-radius: 4px;
-  }
-  label {
-    color: $textMain;
-    font-size: $buttonText;
-    margin-right: 0;
-    margin-left: 0;
-  }
-  span {
-    color: $textGrey;
-  }
-  svg {
-    height: 16px;
-    width: 16px;
-    path {
-      opacity: 0;
-    }
-  }
 }

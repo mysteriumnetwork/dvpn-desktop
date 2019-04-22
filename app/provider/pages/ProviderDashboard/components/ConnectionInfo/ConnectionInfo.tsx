@@ -17,7 +17,7 @@ const ConnectionInfo = () => (
         <tr>
           <td>
             <div className={styles.ipItem}>
-              <div className="app-icons flag-icon" />
+              <div className="flag-icon" />
               <p>172.93.13.176</p>
             </div>
           </td>

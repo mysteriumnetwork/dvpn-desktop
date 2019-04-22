@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { FormControlLabel, Checkbox } from '@material-ui/core'
+import Checkbox from '../../../../../../../ui-kit/components/Checkbox/Checkbox'
 
 import trans from '../../../../../../../trans'
 
@@ -16,12 +16,7 @@ const ResidentialIP = () => (
       </p>
       <p className={styles.helperText}>{trans('app.provider.settings.connection.info.helper.text')}</p>
       <span className={styles.checkbox}>
-        <FormControlLabel
-          control={
-            <Checkbox value="confirm" checkedIcon={<span className="customIcon icon-checkbox-checked" />} />
-          }
-          label={trans('app.provider.settings.connection.info.confirm')}
-        />
+        <Checkbox label={trans('app.provider.settings.connection.info.confirm')} />
       </span>
     </div>
   </div>
