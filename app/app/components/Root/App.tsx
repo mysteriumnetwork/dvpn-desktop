@@ -7,12 +7,14 @@ import AppHeader from '../AppHeader/AppHeader'
 import Terms from '../../pages/Terms/Terms'
 import Welcome from '../../pages/Welcome/Welcome'
 import ConnectionHistory from '../ConnectionHistory/ConnectionHistory'
+import AppAbout from '../AppAbout/AppAbout'
 
 const mainRoutes: RouteDef[] = [...providerRoutes]
 
 const Main = () => (
   <div>
     <AppHeader />
+    <AppAbout />
     <ConnectionHistory />
     {mainRoutes.map(route => {
       return <Route exact key={route.path} path={route.path} component={route.component} />

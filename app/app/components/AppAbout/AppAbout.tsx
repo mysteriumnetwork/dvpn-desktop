@@ -2,23 +2,20 @@ import * as React from 'react'
 import { Dialog } from '@material-ui/core'
 import injectSheet from 'react-jss'
 import DialogHeader from './components/DialogHeader/DialogHeader'
-import ConnectionsList from './components/ConnectionsList/ConnectionsList'
+import DialogContent from './components/DialogContent/DialogContent'
 
 interface IStyles {
-  rootStyled: string
   containerStyled: string
-  paperFullScreen: string
+  paperStyled: string
   rootBackdrop: string
 }
 
 const styles = theme => ({
-  rootStyled: {
-    color: theme.colors.actionPurple,
-  },
   containerStyled: {
     padding: 12,
   },
-  paperFullScreen: {
+  paperStyled: {
+    overflowY: 'unset',
     borderRadius: 4,
     boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.3)',
   },
@@ -27,14 +24,14 @@ const styles = theme => ({
   },
 })
 
-export interface IConnectionHistoryProps {
+export interface IAppAboutProps {
   classes: IStyles
   style?: React.CSSProperties
 }
 
-class ConnectionHistory extends React.Component<IConnectionHistoryProps> {
+class AppAbout extends React.Component<IAppAboutProps> {
   public state = {
-    open: false,
+    open: true,
   }
 
   private handleDialogClose = () => {
@@ -48,13 +45,10 @@ class ConnectionHistory extends React.Component<IConnectionHistoryProps> {
     return (
       <Dialog
         open={open}
-        fullScreen
         onClose={this.handleDialogClose}
-        aria-labelledby="draggable-dialog-title"
         classes={{
-          root: classes.rootStyled,
           container: classes.containerStyled,
-          paperFullScreen: classes.paperFullScreen,
+          paper: classes.paperStyled,
         }}
         BackdropProps={{
           classes: {
@@ -63,10 +57,10 @@ class ConnectionHistory extends React.Component<IConnectionHistoryProps> {
         }}
       >
         <DialogHeader />
-        <ConnectionsList />
+        <DialogContent />
       </Dialog>
     )
   }
 }
 
-export default injectSheet(styles)(ConnectionHistory)
+export default injectSheet(styles)(AppAbout)
