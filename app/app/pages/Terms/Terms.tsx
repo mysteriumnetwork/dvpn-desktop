@@ -2,6 +2,8 @@ import * as React from 'react'
 import { Link } from 'react-router-dom'
 import { NAV_PROVIDER_SETTINGS } from '../../../provider/provider.links'
 import trans from '../../../trans'
+import Button from '../../../ui-kit/components/Button/Button'
+import Checkbox from '../../../ui-kit/components/Checkbox/Checkbox'
 
 const styles = require('./Terms.css')
 
@@ -39,10 +41,11 @@ const Terms = () => (
         <div>
           <span className={styles.catMysterium} />
           <p className={styles.termsAgreement}>
-            <input type="checkbox" name="checkbox" value="agreeTerms" />
-            <span>{trans('app.onboarding.terms.agree.label')}</span>
+            <Checkbox label={trans('app.onboarding.terms.agree.label')} />
           </p>
-          <Link to={NAV_PROVIDER_SETTINGS}>{trans('app.onboarding.continue.btn')}</Link>
+          <Link to={NAV_PROVIDER_SETTINGS}>
+            <Button color="primary">{trans('app.onboarding.continue.btn')}</Button>
+          </Link>
         </div>
       </div>
     </div>

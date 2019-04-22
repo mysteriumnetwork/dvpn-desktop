@@ -1,0 +1,28 @@
+/* Custom icons for checkbox and radiobutton */
+.customIcon {
+  height: 16px;
+  width: 16px;
+  background: url('app/components/assets/images/control-icons.svg') no-repeat;
+  background-size: 85px 32px;
+}
+.icon-radio-checked {
+  background-position: 0 0;
+}
+.icon-checkbox-checked {
+  background-position: 0 -16px;
+}
+
+/* App icons */
+.app-icons {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  background: url('app/components/assets/images/app-icons.svg') no-repeat;
+  background-size: 184px 232px;
+}
+.residentialIPIcon {
+  background-position: -112px -40px;
+}
+.dataCenterIPIcon {
+  background-position: -112px -80px;
+}

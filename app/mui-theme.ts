@@ -1,6 +1,44 @@
 import { createMuiTheme } from '@material-ui/core/styles'
 
 const options: any = {
+  palette: {
+    primary: {
+      main: '#632462',
+    },
+  },
+  overrides: {
+    MuiExpansionPanel: {
+      root: {
+        borderRadius: 0,
+        boxShadow: 'none',
+      },
+    },
+    MuiExpansionPanelSummary: {
+      root: {
+        padding: 0,
+        '&$expanded': {
+          minHeight: 48,
+        },
+      },
+      content: {
+        '&$expanded': {
+          margin: '12px 0',
+        },
+      },
+      expanded: {},
+      expandIcon: {
+        right: -10,
+        padding: 6,
+        color: '#843a72',
+      },
+    },
+    MuiExpansionPanelDetails: {
+      root: {
+        padding: 0,
+        flexFlow: 'column',
+      },
+    },
+  },
   colors: {
     blackColor: '#000000',
     whiteColor: '#ffffff',
@@ -22,7 +60,7 @@ const options: any = {
   typography: {
     useNextVariants: true,
     color: 'rgb(85, 85, 85)',
-    // Use the system font instead of the default Roboto font.
+    textTransform: 'none',
     fontSizes: {
       mainTitle: 24,
       subTitle: 20,
