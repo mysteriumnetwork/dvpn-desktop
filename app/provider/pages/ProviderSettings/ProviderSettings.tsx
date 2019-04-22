@@ -1,8 +1,11 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
-import { TextField, Radio, FormControlLabel, Button } from '@material-ui/core'
+// import { TextField } from '@material-ui/core'
 import { NAV_PROVIDER_DASHBOARD } from '../../provider.links'
 import trans from '../../../trans'
+import Button from '../../../ui-kit/components/Button/Button'
+import RadioButton from '../../../ui-kit/components/RadioButton/RadioButton'
+import AppTextfield from '../../../ui-kit/components/AppTextField/AppTextField'
 import ConnectionInformation from './components/ConnectionInformation/ConnectionInformation'
 
 const styles = require('./ProviderSettings.css')
@@ -21,14 +24,7 @@ const ProviderSettings = () => (
           <div className={styles.flexedRow}>
             <p>{trans('app.provider.settings.wallet')}</p>
             <div>
-              <TextField
-                placeholder="0x..."
-                name="airdropWallet"
-                fullWidth
-                InputProps={{
-                  disableUnderline: true,
-                }}
-              />
+              <AppTextfield placeholder="0x..." name="airdropWallet" fullWidth />
               {/* TODO show error if wallet address invalid */}
               <p className={styles.errorText}>{trans('app.provider.settings.wallet.error')}</p>
               <p className={styles.helperText}>{trans('app.provider.settings.wallet.helper.text')}</p>
@@ -39,21 +35,11 @@ const ProviderSettings = () => (
             {/* TODO Add Radio controls */}
             <div>
               <div className={styles.radioForm}>
-                <FormControlLabel
-                  value="mysteriumVarified"
-                  control={<Radio checkedIcon={<span className="customIcon icon-radio-checked" />} />}
-                  label={trans('app.provider.settings.verified.partner.traffic')}
-                  labelPlacement="end"
-                />
+                <RadioButton label={trans('app.provider.settings.verified.partner.traffic')} />
                 <p className={styles.helperText}>{trans('app.provider.settings.safe.option')}</p>
               </div>
               <div className={styles.radioForm}>
-                <FormControlLabel
-                  value="mysteriumVarified"
-                  control={<Radio checkedIcon={<span className="customIcon icon-radio-checked" />} />}
-                  label={trans('app.provider.settings.all.traffic')}
-                  labelPlacement="end"
-                />
+                <RadioButton label={trans('app.provider.settings.all.traffic')} />
               </div>
             </div>
           </div>
@@ -62,10 +48,9 @@ const ProviderSettings = () => (
         <ConnectionInformation />
       </div>
     </div>
-
     <div className={styles.bottomBar}>
       <Link to={NAV_PROVIDER_DASHBOARD}>
-        <Button>{trans('app.provider.settings.start.vpn')}</Button>
+        <Button color="primary">{trans('app.provider.settings.start.vpn')}</Button>
       </Link>
     </div>
   </div>

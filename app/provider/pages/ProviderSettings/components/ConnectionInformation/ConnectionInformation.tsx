@@ -1,13 +1,8 @@
 import * as React from 'react'
-import {
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
-  FormControlLabel,
-  Checkbox,
-} from '@material-ui/core'
+import { ExpansionPanel, ExpansionPanelSummary, ExpansionPanelDetails } from '@material-ui/core'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMoreRounded'
 import trans from '../../../../../trans'
+import Checkbox from '../../../../../ui-kit/components/Checkbox/Checkbox'
 
 const styles = require('./ConnectionInformation.css')
 
@@ -40,17 +35,9 @@ const ConnectionInformation = () => (
               </span>
             </p>
             <p className={styles.helperText}>{trans('app.provider.settings.connection.info.helper.text')}</p>
-            <span className={styles.checkbox}>
-              <FormControlLabel
-                control={
-                  <Checkbox
-                    value="confirm"
-                    checkedIcon={<span className="customIcon icon-checkbox-checked" />}
-                  />
-                }
-                label={trans('app.provider.settings.connection.info.confirm')}
-              />
-            </span>
+            <p className={styles.checkbox}>
+              <Checkbox label={trans('app.provider.settings.connection.info.confirm')} />
+            </p>
           </div>
         </div>
         {/* markup for Data Center IP */}

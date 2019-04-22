@@ -99,20 +99,3 @@
   justify-content: start;
   align-items: center;
 }
-.termsAgreement input {
-  padding: 0;
-  color: #808080;
-}
-.termsAgreement svg {
-  height: 16px;
-  width: 16px;
-}
-.termsAgreement svg path {
-  opacity: 0;
-}
-.termsAgreement label {
-  color: #404040;
-  font-size: 14px;
-  margin-right: 8px;
-  margin-left: 0;
-}

@@ -3,7 +3,8 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 
-/* @import '~@fortawesome/fontawesome-free/css/all.css'; */
+@import 'flag-icons.scss';
+@import 'icons.scss';
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
@@ -29,10 +30,6 @@ body {
   padding: 0;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
-}
-
-p {
-  font-size: 14px;
 }
 
 li {
@@ -76,8 +73,6 @@ input {
 
 input:focus {
   outline: none;
-  box-shadow: 0 0 0 1.5px rgba(145, 78, 128, 0.29), 0 0 0 0.5px #914e80, inset 0 0.5px 1.5px 0 #ccc,
-    inset 0 0 0.5px 0 #333;
 }
 
 /* Change text in autofill textbox */
@@ -95,44 +90,4 @@ input:-webkit-autofill:active {
 button {
   border: none;
   outline: none;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-/* Custom icons for checkbox and radiobutton */
-.customIcon {
-  height: 16px;
-  width: 16px;
-  background: url('app/components/assets/images/control-icons.svg') no-repeat;
-  background-size: 85px 32px;
-}
-.icon-radio-checked {
-  background-position: 0 0;
-}
-.icon-checkbox-checked {
-  background-position: 0 -16px;
-}
-
-/* App icons */
-.app-icons {
-  width: 24px;
-  height: 24px;
-  min-width: 24px;
-  background: url('app/components/assets/images/app-icons.svg') no-repeat;
-  background-size: 184px 232px;
-}
-.residentialIPIcon {
-  background-position: -112px -40px;
-}
-.dataCenterIPIcon {
-  background-position: -112px -80px;
-}
-
-/* Flag icons sprite - will be done on next stage */
-
-/* temporary visualisation */
-.flag-icon {
-  width: 24px;
-  height: 24px;
-  background: lightgray;
 }

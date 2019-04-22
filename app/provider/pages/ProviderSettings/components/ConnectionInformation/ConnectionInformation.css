@@ -25,31 +25,9 @@
   font-size: 12px;
   display: block;
 }
-.checkbox input {
-  color: #808080;
-  font-size: 12px;
-  padding: 4px 12px;
-  border-radius: 4px;
-}
 .checkbox {
   display: block;
   margin: 12px 0;
-}
-.checkbox svg {
-  height: 16px;
-  width: 16px;
-}
-.checkbox svg path {
-  opacity: 0;
-}
-.checkbox label {
-  color: #404040;
-  font-size: 14px;
-  margin-right: 0;
-  margin-left: 0;
-}
-.checkbox span {
-  color: #4e4e4e;
 }
 .helperText {
   margin-top: 8px;

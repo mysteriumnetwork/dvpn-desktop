@@ -34,19 +34,7 @@
 .flexedRow div {
   color: #404040;
 }
-.flexedRow input {
-  color: #808080;
-  font-size: 12px;
-  padding: 4px 12px;
-  border-radius: 4px;
-}
-.flexedRow svg {
-  height: 16px;
-  width: 16px;
-}
-.flexedRow svg path {
-  opacity: 0;
-}
+
 .flexedRow .helperText {
   margin-top: 8px;
   font-size: 12px;
@@ -57,12 +45,6 @@
 }
 .radioForm p {
   margin-left: 26px;
-}
-.radioForm label {
-  color: #404040;
-  font-size: 14px;
-  margin-right: 8px;
-  margin-left: 0;
 }
 .bottomBar {
   bottom: 0;
