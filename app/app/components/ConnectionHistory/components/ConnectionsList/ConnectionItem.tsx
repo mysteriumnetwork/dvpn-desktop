@@ -1,11 +1,27 @@
 import * as React from 'react'
+import injectSheet from 'react-jss'
 
-const styles = require('./ConnectionsList.css')
+interface IStyles {
+  ipItem: string
+}
+const styles = theme => ({
+  ipItem: {
+    display: 'flex',
+    '& > p': {
+      marginLeft: 8,
+    },
+  },
+})
 
-const ConnectionItem = () => (
+export interface IConnectionItemProps {
+  classes: IStyles
+  style?: React.CSSProperties
+}
+
+const ConnectionItem: React.SFC<IConnectionItemProps> = (props: IConnectionItemProps) => (
   <tr>
     <td>
-      <div className={styles.ipItem}>
+      <div className={props.classes.ipItem}>
         <div className="flag-icon" />
         <p>172.93.13.176</p>
       </div>
@@ -17,4 +33,4 @@ const ConnectionItem = () => (
   </tr>
 )
 
-export default ConnectionItem
+export default injectSheet(styles)(ConnectionItem)
