@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from '@material-ui/core'
 import { NAV_PROVIDER_DASHBOARD } from '../../provider.links'
 import trans from '../../../trans'
+import Button from '../../../ui-kit/components/Button/Button'
 import ConnectionInformation from './components/ConnectionInformation/ConnectionInformation'
 import AirdropWallet from './components/AirdropWallet/AirdropWallet'
 
@@ -26,10 +26,9 @@ const ProviderSettings = () => (
         <ConnectionInformation />
       </div>
     </div>
-
     <div className={styles.bottomBar}>
       <Link to={NAV_PROVIDER_DASHBOARD}>
-        <Button>{trans('app.provider.settings.start.vpn')}</Button>
+        <Button color="primary">{trans('app.provider.settings.start.vpn')}</Button>
       </Link>
     </div>
   </div>

@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from '@material-ui/core'
 import { NAV_TERMS } from '../../app.links'
 import trans from '../../../trans'
+import Button from '../../../ui-kit/components/Button/Button'
 
-const styles = require('./Welcome.css')
+const styles = require('./Welcome.scss')
 
 const Welcome = () => (
   <div className={styles.appCover}>
@@ -14,7 +14,7 @@ const Welcome = () => (
       <h1>{trans('app.onboarding.welcome')}</h1>
       <h4>{trans('app.onboarding.subtitle')}</h4>
       <Link to={NAV_TERMS}>
-        <Button>{trans('app.onboarding.get.started.btn')}</Button>
+        <Button color="primary">{trans('app.onboarding.get.started.btn')}</Button>
       </Link>
     </div>
   </div>

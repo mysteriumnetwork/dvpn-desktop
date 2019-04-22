@@ -2,7 +2,7 @@ import * as React from 'react'
 import { IconButton, Menu, MenuItem } from '@material-ui/core'
 import trans from '../../../trans'
 
-const styles = require('./AppMenu.css')
+const styles = require('./AppMenu.scss')
 
 class AppMenu extends React.Component {
   public state = {

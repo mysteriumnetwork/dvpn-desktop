@@ -5,7 +5,7 @@ import trans from '../../../../../trans'
 import ResidentialIP from './components/ResidentialIP/ResidentialIP'
 import DataCenterIP from './components/DataCenterIP/DataCenterIP'
 
-const styles = require('./ConnectionInformation.css')
+const styles = require('./ConnectionInformation.scss')
 
 const ConnectionInformation = () => (
   <div>

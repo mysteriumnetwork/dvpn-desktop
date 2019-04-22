@@ -1,11 +1,12 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
-import { Button, FormControlLabel, Checkbox } from '@material-ui/core'
 import { NAV_PROVIDER_SETTINGS } from '../../../provider/provider.links'
 import TermsItem from './components/TermsItem/TermsItem'
 import trans from '../../../trans'
+import Button from '../../../ui-kit/components/Button/Button'
+import Checkbox from '../../../ui-kit/components/Checkbox/Checkbox'
 
-const styles = require('./Terms.css')
+const styles = require('./Terms.scss')
 
 const Terms = () => (
   <div className={styles.appTermsCover}>
@@ -21,18 +22,10 @@ const Terms = () => (
         <div>
           <span className={styles.catMysterium} />
           <p className={styles.termsAgreement}>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  value="agreeTerms"
-                  checkedIcon={<span className="customIcon icon-checkbox-checked" />}
-                />
-              }
-              label={trans('app.onboarding.terms.agree.label')}
-            />
+            <Checkbox label={trans('app.onboarding.terms.agree.label')} />
           </p>
           <Link to={NAV_PROVIDER_SETTINGS}>
-            <Button>{trans('app.onboarding.continue.btn')}</Button>
+            <Button color="primary">{trans('app.onboarding.continue.btn')}</Button>
           </Link>
         </div>
       </div>

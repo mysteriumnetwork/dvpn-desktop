@@ -3,7 +3,7 @@ import { TextField, Radio, FormControlLabel } from '@material-ui/core'
 
 import trans from '../../../../../trans'
 
-const styles = require('./AirdropWallet.css')
+const styles = require('./AirdropWallet.scss')
 
 const AirdropWallet = () => (
   <div>

@@ -3,7 +3,7 @@ import { FormControlLabel, Checkbox } from '@material-ui/core'
 
 import trans from '../../../../../../../trans'
 
-const styles = require('./ResidentialIP.css')
+const styles = require('./ResidentialIP.scss')
 
 const ResidentialIP = () => (
   <div className={styles.connectionFlexedRow}>

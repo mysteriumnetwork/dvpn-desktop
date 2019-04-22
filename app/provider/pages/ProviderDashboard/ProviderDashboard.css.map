@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEA,eAAgB;EACd,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,IAAI;EACpB,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,kBAAkB;EAC1B,UAAU,EAAE,4DAA4D;;AAE1E,gBAAiB;EACf,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,aAAa,EAAE,IAAI;EACnB,mBAAG;IACD,KAAK,ECdI,IAAI;IDeb,iCAAc;MACZ,SAAS,ECGJ,OAAO;MDFZ,aAAa,EAAE,GAAG;IAEpB,gCAAa;MACX,SAAS,ECCC,OAAO;MDAjB,OAAO,EAAE,GAAG",
-"sources": ["ProviderDashboard.scss","../../../_constatnts.scss"],
-"names": [],
-"file": "ProviderDashboard.css"
-}

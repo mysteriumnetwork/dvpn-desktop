@@ -2,7 +2,7 @@ import * as React from 'react'
 import trans from '../../../trans'
 import AppMenu from '../AppMenu/AppMenu'
 
-const styles = require('./AppHeader.css')
+const styles = require('./AppHeader.scss')
 
 const AppHeader = () => (
   <div className={styles.appHeader}>

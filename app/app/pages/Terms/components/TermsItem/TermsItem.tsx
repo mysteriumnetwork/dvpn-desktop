@@ -1,7 +1,7 @@
 import * as React from 'react'
 import trans from '../../../../../trans'
 
-const styles = require('./TermsItem.css')
+const styles = require('./TermsItem.scss')
 
 const TermsItem = () => (
   <div className={styles.termsItem}>

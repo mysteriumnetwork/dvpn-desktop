@@ -1,7 +1,7 @@
 import * as React from 'react'
 import trans from '../../../../../../../trans'
 
-const styles = require('./DataCenterIP.css')
+const styles = require('./DataCenterIP.scss')
 
 const DataCenterIP = () => (
   <div className={styles.connectionFlexedRow}>
