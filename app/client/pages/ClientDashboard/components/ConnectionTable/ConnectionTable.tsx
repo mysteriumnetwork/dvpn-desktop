@@ -1,5 +1,15 @@
 import * as React from 'react'
 
-const ConnectionTable = () => <div>table</div>
+import TableHead from './components/TableHead/TableHead'
+import TableBody from './components/TableBody/TableBody'
+
+const styles = require('./ConnectionTable.scss')
+
+const ConnectionTable = () => (
+  <div className={styles.root}>
+    <TableHead />
+    <TableBody />
+  </div>
+)
 
 export default ConnectionTable
