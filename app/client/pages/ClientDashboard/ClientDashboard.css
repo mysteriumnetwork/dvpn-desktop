@@ -1,0 +1,6 @@
+.dashboardCover {
+  display: flex;
+  background: #fff;
+  height: 100vh;
+  position: relative;
+}

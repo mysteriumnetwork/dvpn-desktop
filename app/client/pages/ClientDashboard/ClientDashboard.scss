@@ -1,0 +1,8 @@
+@import '../../../constatnts';
+
+.dashboardCover {
+  display: flex;
+  background: $whiteColor;
+  height: 100vh;
+  position: relative;
+}

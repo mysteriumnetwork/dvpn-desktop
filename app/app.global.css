@@ -10,7 +10,7 @@
 .flag-icon {
   width: 24px;
   height: 24px;
-  background: url('app/components/assets/images/flag-icon-temp.svg') no-repeat;
+  background: url('app/components/assets/images/flag-icon-temp.svg') no-repeat center;
 }
 
 /* Custom icons for checkbox and radiobutton */
@@ -136,6 +136,22 @@
 
 .close-icon {
   background-position: -108px 4px;
+}
+
+.all-icon {
+  background-position: 4px -36px;
+}
+
+.all-icon:hover {
+  background-position: -20px -36px;
+}
+
+.fave-icon {
+  background-position: 4px -62px;
+}
+
+.fave-icon:hover {
+  background-position: -20px -62px;
 }
 
 * {

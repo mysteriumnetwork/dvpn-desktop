@@ -55,6 +55,11 @@
   "app.about.app.version": "App version",
   "app.about.checked.for.updates": "Checked for updates yesterday.",
   "app.about.check.for.updates": "Check for Updates",
+  "app.client.side.bar.all": "All",
+  "app.client.side.bar.favorites": "Favorites",
+  "app.client.side.bar.by.connection.type": "By Connection Type",
+  "app.client.side.bar.by.country": "By Country",
+  "app.client.side.bar.ireland": "Ireland",
 
   "": ""
 }

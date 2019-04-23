@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Redirect, Route, Switch, withRouter } from 'react-router-dom'
 import { RouteDef } from '../../app.types'
 import { providerRoutes } from '../../../provider/provider.routes'
+import { clientRoutes } from '../../../client/client.routes'
 import { NAV_TERMS, NAV_WELCOME } from '../../app.links'
 import AppHeader from '../AppHeader/AppHeader'
 import Terms from '../../pages/Terms/Terms'
@@ -9,7 +10,7 @@ import Welcome from '../../pages/Welcome/Welcome'
 import ConnectionHistory from '../ConnectionHistory/ConnectionHistory'
 import AppAbout from '../AppAbout/AppAbout'
 
-const mainRoutes: RouteDef[] = [...providerRoutes]
+const mainRoutes: RouteDef[] = [...clientRoutes, ...providerRoutes]
 
 const Main = () => (
   <div>
