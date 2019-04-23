@@ -3,11 +3,11 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 
+@import 'constatnts';
 @import 'flag-icons.scss';
 @import 'icons.scss';
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-
 * {
   margin: 0;
   text-decoration: none;
@@ -23,7 +23,6 @@ body {
   position: relative;
   color: #333;
   height: 100vh;
-  background-color: #232c39;
   background-image: linear-gradient(to bottom, #9b2463, #312461);
   overflow-y: hidden;
   margin: 0;
@@ -55,6 +54,7 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
 h1,
 h2,
 h3,
@@ -87,6 +87,7 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
+
 button {
   border: none;
   outline: none;

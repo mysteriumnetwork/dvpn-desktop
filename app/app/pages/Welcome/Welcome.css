@@ -7,16 +7,18 @@
   justify-content: center;
   background-image: linear-gradient(to bottom, #9b2463, #312461);
 }
+
 .appBgPattern {
   opacity: 0.1;
   width: 720px;
   height: 456px;
   z-index: 1;
   position: absolute;
-  background: url('./assets/images/app-bg.png') no-repeat;
+  background: url('../../components/assets/images/app-bg.png') no-repeat;
   background-size: contain;
   background-position: center;
 }
+
 .appContent {
   max-width: 390px;
   margin: 0 auto;
@@ -25,7 +27,7 @@
 }
 .appContent h1 {
   color: #fff;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
   letter-spacing: 0.01em;
@@ -33,25 +35,23 @@
 }
 .appContent h4 {
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.5);
   margin: 16px 0 28px;
 }
+
 .logo {
   height: 156px;
   width: 240px;
   margin: 0 auto 0;
-  background: url('./assets/images/Logo.png') no-repeat;
+  background: url('../../components/assets/images/logo.svg') no-repeat;
   background-size: contain;
   background-position: center;
 }
+
 @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .appBgPattern {
-    background: url('./assets/images/app-bg@2x.png') no-repeat;
-    background-size: contain;
-  }
-  .logo {
-    background: url('./assets/images/Logo@2x.png') no-repeat;
+    background: url('../../components/assets/images/app-bg@2x.png') no-repeat;
     background-size: contain;
   }
 }

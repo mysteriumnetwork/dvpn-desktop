@@ -1,0 +1,6 @@
+.ipItem {
+  display: flex;
+}
+.ipItem p {
+  margin-left: 8px;
+}

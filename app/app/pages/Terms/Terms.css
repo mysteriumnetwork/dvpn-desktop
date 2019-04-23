@@ -6,57 +6,26 @@
   position: relative;
   background: #fff;
 }
+
 .appTermsListCover {
   max-width: 300px;
   margin: 0 auto;
 }
+
 .appTermsListCover h2 {
   text-align: center;
   font-weight: 300;
   margin-bottom: 46px;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #843a72;
 }
-.termsItem {
-  margin-top: 12px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-.termsItem h3 {
-  font-weight: 600;
-  font-size: 15px;
-  color: #843a72;
-}
-.termsItemText {
-  font-size: 12px;
-  color: #333;
-  margin: 6px 0;
-}
-.termsItemText a {
-  cursor: pointer;
-  margin-left: 8px;
-  padding-right: 5px;
-  position: relative;
-  color: #843a72;
-}
+
 .barContent a {
   top: 16px;
   right: -200px;
   position: absolute;
 }
-.termsItemText a::after {
-  right: -3px;
-  position: relative;
-  content: '>';
-  vertical-align: baseline;
-}
-.termsItemText a:hover {
-  border-bottom: 1px solid;
-}
-.date {
-  font-size: 12px;
-  color: #808080;
-}
+
 .bottomBar {
   position: absolute;
   bottom: 0;
@@ -70,6 +39,7 @@
   max-width: 300px;
   margin: 0 auto;
 }
+
 .barContent {
   width: 680px;
   height: 100%;
@@ -78,6 +48,7 @@
   display: flex;
   align-items: center;
 }
+
 .catMysterium {
   position: absolute;
   top: -150px;
@@ -85,17 +56,35 @@
   height: 200px;
   width: 128px;
   display: block;
-  background: url('./assets/images/Cat.png') no-repeat;
+  background: url('../../components/assets/images/Cat.png') no-repeat;
   background-size: contain;
 }
+
 @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .catMysterium {
-    background: url('./assets/images/Cat@2x.png') no-repeat;
+    background: url('../../components/assets/images/Cat@2x.png') no-repeat;
     background-size: contain;
   }
 }
 .termsAgreement {
   display: flex;
-  justify-content: start;
   align-items: center;
+  justify-content: start;
+}
+.termsAgreement input {
+  padding: 0;
+  color: #808080;
+}
+.termsAgreement svg {
+  height: 16px;
+  width: 16px;
+}
+.termsAgreement svg path {
+  opacity: 0;
+}
+.termsAgreement label {
+  color: #404040;
+  font-size: 0.875rem;
+  margin-right: 8px;
+  margin-left: 0;
 }

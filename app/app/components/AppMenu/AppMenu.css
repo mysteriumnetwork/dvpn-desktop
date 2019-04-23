@@ -1,0 +1,63 @@
+.menuContainer button {
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.menuContainer button:hover {
+  background: transparent;
+}
+
+li.menuItem {
+  font-size: 0.875rem;
+  color: #404040;
+  padding: 4px 16px;
+}
+li.menuItem:first-child {
+  border-bottom: 2px solid #e6e6e6;
+}
+li.menuItem:last-child {
+  border-top: 2px solid #e6e6e6;
+}
+li.menuItem:focus {
+  background: transparent;
+}
+li.menuItem:hover {
+  color: #fff;
+  background: #843a72;
+}
+
+li.followMenuItem {
+  padding: 4px 16px;
+  height: auto;
+}
+li.followMenuItem:hover {
+  background: transparent;
+}
+
+.followList {
+  width: 100%;
+  font-size: 0.75rem;
+  color: #666;
+}
+.followList ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: inline-flex;
+}
+.followList ul li {
+  padding: 5px;
+  display: inline-block;
+}
+.followList ul li:first-child,
+.followList ul li:last-child {
+  border: none;
+}
+.followList ul li:hover {
+  background: transparent;
+}
+.followList ul li a {
+  display: block;
+}
