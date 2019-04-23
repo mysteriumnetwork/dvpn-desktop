@@ -62,6 +62,8 @@
   "app.client.side.bar.ireland": "Ireland",
   "app.client.dashboard.server": "Server",
   "app.client.dashboard.connection.type": "Connection Type",
+  "app.client.dashboard.not.connected": "Not connected",
+  "app.client.dashboard.connect.button": "Connect",
 
   "": ""
 }
