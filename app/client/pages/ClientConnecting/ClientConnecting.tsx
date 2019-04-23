@@ -3,24 +3,21 @@ import { Link } from 'react-router-dom'
 import { NAV_CLIENT_DASHBOARD } from '../../client.links'
 import trans from '../../../trans'
 import Button from '../../../ui-kit/components/Button/Button'
+import ConnectionImgBlock from './components/ConnectionImgBlock/ConnectionImgBlock'
+import ConnectionInfoBlock from './components/ConnectionInfoBlock/ConnectionInfoBlock'
 
-// const styles = require('./ProviderDashboard.scss')
+const styles = require('./ClientConnecting.scss')
 
 const ClientConnecting = () => (
-  <div>
+  <div className={styles.root}>
+    <h3 className={styles.title}>{trans('app.client.connecting.title')}</h3>
     <div>
-      <h4>
-        <p>9{trans('app.node.running.users.connected')}</p>
-        <p>
-          9{trans('app.node.running.successful.connections')}
-          <span>/</span>
-          11{trans('app.node.running.attempted')}
-        </p>
-      </h4>
+      <ConnectionImgBlock />
+      <ConnectionInfoBlock />
+    </div>
+    <div className={styles.action}>
       <Link to={NAV_CLIENT_DASHBOARD}>
-        <Button variant="contained" color="secondary">
-          Disconnect
-        </Button>
+        <Button color="primary">{trans('app.client.cancel.button')}</Button>
       </Link>
     </div>
   </div>

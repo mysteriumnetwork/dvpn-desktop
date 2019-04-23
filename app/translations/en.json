@@ -64,6 +64,10 @@
   "app.client.dashboard.connection.type": "Connection Type",
   "app.client.dashboard.not.connected": "Not connected",
   "app.client.dashboard.connect.button": "Connect",
+  "app.client.connecting.title": "Connecting to a Mysterium VPN Node…",
+  "app.client.cancel.button": "Cancel",
+  "app.client.external.ip": "External IP",
+  "app.client.server.id": "Server ID",
 
   "": ""
 }
