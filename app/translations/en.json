@@ -68,6 +68,9 @@
   "app.client.cancel.button": "Cancel",
   "app.client.external.ip": "External IP",
   "app.client.server.id": "Server ID",
+  "app.client.disconnect.button": "Disconnect",
+  "app.client.remove.from.favorites.button": "Remove from Favorites",
+  "app.client.add.to.favorites.button": "Add to Favorites",
 
   "": ""
 }
