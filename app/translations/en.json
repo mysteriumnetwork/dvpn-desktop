@@ -75,6 +75,12 @@
   "app.client.go.back.button": "Go Back",
   "app.client.connection.failed": "Connection Failed",
   "app.client.connected": "Connected to a Mysterium VPN Node",
+  "app.warning.message.mysterium.service.down": "Mysterium Discovery service is down",
+  "app.warning.message.no.internet.connection": "You are not connected to the Internet",
+  "app.warning.report.problem": "Report Problem",
+  "app.warning.retry": "Retry",
+  "app.client.button.ok": "OK",
+  "app.client.node.disconnected": "The node has disconnected.",
 
   "": ""
 }

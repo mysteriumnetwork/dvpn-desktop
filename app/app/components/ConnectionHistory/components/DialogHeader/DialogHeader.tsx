@@ -3,11 +3,14 @@ import injectSheet from 'react-jss'
 import { IconButton, DialogTitle } from '@material-ui/core'
 import trans from '../../../../../trans'
 
+const classNames = require('classnames')
+
 interface IStyles {
   titleRoot: string
   dialogHeader: string
   tabContainer: string
   tab: string
+  active: string
 }
 
 const styles = theme => ({
@@ -56,12 +59,12 @@ const styles = theme => ({
       borderRadius: '0 4px 4px 0',
       borderLeft: 'none',
     },
-    '&:active': {
-      color: theme.colors.whiteColor,
-      boxShadow: 'inset 0 0.5px 1px 0 #632462',
-      border: 'solid 0.3px rgba(0, 0, 0, 0.1)',
-      backgroundImage: theme.colors.purpleMain,
-    },
+  },
+  active: {
+    color: theme.colors.whiteColor,
+    boxShadow: 'inset 0 0.5px 1px 0 #632462',
+    border: 'solid 0.3px rgba(0, 0, 0, 0.1)',
+    backgroundImage: theme.colors.purpleMain,
   },
 })
 
@@ -80,8 +83,22 @@ const DialogHeader: React.SFC<IDialogHeaderProps> = (props: IDialogHeaderProps) 
     <div className={props.classes.dialogHeader}>
       <h3> {trans('document.title')}</h3>
       <div className={props.classes.tabContainer}>
-        <div className={props.classes.tab}>{trans('app.connection.history.as.client')}</div>
-        <div className={props.classes.tab}>{trans('app.connection.history.as.provider')}</div>
+        <div
+          className={classNames(props.classes.tab, {
+            // add class active when tab is open
+            //   [props.classes.active]&&selected
+          })}
+        >
+          {trans('app.connection.history.as.client')}
+        </div>
+        <div
+          className={classNames(props.classes.tab, {
+            // add class active when tab is open
+            //   [props.classes.active]&&selected
+          })}
+        >
+          {trans('app.connection.history.as.provider')}
+        </div>
       </div>
       <IconButton>
         <div className="app-icons close-icon" />

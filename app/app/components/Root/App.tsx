@@ -9,6 +9,7 @@ import Terms from '../../pages/Terms/Terms'
 import Welcome from '../../pages/Welcome/Welcome'
 import ConnectionHistory from '../ConnectionHistory/ConnectionHistory'
 import AppAbout from '../AppAbout/AppAbout'
+import AppWarningPopup from '../AppWarningPopup/AppWarningPopup'
 
 const mainRoutes: RouteDef[] = [...clientRoutes, ...providerRoutes]
 
@@ -17,6 +18,7 @@ const Main = () => (
     <AppHeader />
     <AppAbout />
     <ConnectionHistory />
+    <AppWarningPopup />
     {mainRoutes.map(route => {
       return <Route exact key={route.path} path={route.path} component={route.component} />
     })}
