@@ -2,13 +2,30 @@ import * as React from 'react'
 import injectSheet from 'react-jss'
 import trans from '../../../../../../../trans'
 
+const classNames = require('classnames')
+
 interface IStyles {
   root: string
+  menuItem: string
+  active: string
+  itemsCount: string
+  allIcon: string
 }
 
 const styles = theme => ({
   root: {
+    '& > a': {
+      width: '100%',
+    },
+  },
+  menuItem: {
+    display: 'flex',
+    alignItems: 'center',
+    padding: '6px 14px',
+    position: 'relative',
+    borderRadius: 4,
     marginBottom: 2,
+    color: theme.colors.textMain,
     '& .allIcon': {
       width: 24,
       height: 24,
@@ -20,28 +37,20 @@ const styles = theme => ({
     },
     '& .itemsCount': {
       position: 'absolute',
-      top: 6,
+      top: 10,
       right: 14,
       color: theme.colors.textLightGrey,
     },
-    '& > a': {
-      display: 'flex',
-      alignItems: 'center',
-      padding: '6px 14px',
-      position: 'relative',
-      borderRadius: 4,
-      color: theme.colors.textMain,
-      '&:hover': {
-        color: theme.colors.whiteColor,
-        background: theme.colors.actionPurple,
-        '& .allIcon': {
-          backgroundPosition: '-20px -36px',
-        },
-        '& .itemsCount': {
-          opacity: '0.5',
-          color: theme.colors.whiteColor,
-        },
-      },
+  },
+  active: {
+    color: theme.colors.whiteColor,
+    background: theme.colors.actionPurple,
+    '& .allIcon': {
+      backgroundPosition: '-20px -36px',
+    },
+    '& .itemsCount': {
+      opacity: '0.5',
+      color: theme.colors.whiteColor,
     },
   },
 })
@@ -55,9 +64,16 @@ export interface IMenuItemAllProps {
 const MenuItemAll: React.SFC<IMenuItemAllProps> = (props: IMenuItemAllProps) => (
   <div className={props.classes.root}>
     <a href="/">
-      <div className="allIcon" />
-      <p>{trans('app.client.side.bar.all')}</p>
-      <div className="itemsCount">23</div>
+      <div
+        className={classNames(props.classes.menuItem, {
+          // add class active when item selected
+          // [props.classes.active]
+        })}
+      >
+        <div className="allIcon" />
+        <p>{trans('app.client.side.bar.all')}</p>
+        <div className="itemsCount">23</div>
+      </div>
     </a>
   </div>
 )

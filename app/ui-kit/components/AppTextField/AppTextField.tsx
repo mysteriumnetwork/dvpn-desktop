@@ -29,6 +29,7 @@ const styles = theme => ({
     borderRadius: 4,
     padding: '4px 12px 5px !important',
     width: '100%',
+    fontFamily: '"mplus-1m", sans-serif !important',
     color: `${theme.colors.textMain}!important`,
     backgroundColor: theme.colors.whiteColor,
     fontSize: '14px !important',

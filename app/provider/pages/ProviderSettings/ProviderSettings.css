@@ -36,6 +36,7 @@
 }
 .flexedRow div {
   color: #404040;
+  font-family: 'mplus-1m', sans-serif;
 }
 .flexedRow .helperText {
   margin-top: 8px;

@@ -1,18 +1,18 @@
 import * as React from 'react'
 import injectSheet from 'react-jss'
 import { IconButton, DialogTitle } from '@material-ui/core'
-import trans from '../../../../../trans'
 
 interface IStyles {
   titleRoot: string
   dialogHeader: string
   dialogHeaderBack: string
   tab: string
+  mysteriumLogo: string
 }
 
 const styles = theme => ({
   titleRoot: {
-    padding: 0,
+    padding: '0 !important',
     minWidth: 360,
   },
   dialogHeaderBack: {
@@ -36,16 +36,6 @@ const styles = theme => ({
     flexFlow: 'column',
     alignItems: 'center',
     justifyContent: 'space-between',
-    '& > h3': {
-      maxWidth: 165,
-      margin: '-20px 0  12px',
-      textAlign: 'center',
-      color: '#272265',
-      fontWeight: 'bold',
-      textTransform: 'uppercase',
-      fontFamily: '"MagdaClean", sans-serif',
-      fontSize: theme.typography.fontSizes.mainTitle,
-    },
     '& > button': {
       position: 'absolute',
       right: 3,
@@ -58,6 +48,17 @@ const styles = theme => ({
       top: -24,
       position: 'relative',
       background: 'url("app/components/assets/images/AppIcon.svg") no-repeat',
+    },
+  },
+  mysteriumLogo: {
+    width: 184,
+    height: 56,
+    margin: '-20px 0  12px',
+    background: 'url("app/components/assets/images/mysterium-network-logo.png") no-repeat center',
+    backgroundSize: 'contain',
+    '@media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)': {
+      background: 'url("app/components/assets/images/mysterium-network-logo@2x.png") no-repeat center',
+      backgroundSize: 'contain',
     },
   },
 })
@@ -77,7 +78,7 @@ const DialogHeader: React.SFC<IDialogHeaderProps> = (props: IDialogHeaderProps) 
     <div className={props.classes.dialogHeaderBack} />
     <div className={props.classes.dialogHeader}>
       <div />
-      <h3> {trans('app.about.title')}</h3>
+      <p className={props.classes.mysteriumLogo} />
       <IconButton>
         <div className="app-icons close-icon" />
       </IconButton>

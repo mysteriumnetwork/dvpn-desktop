@@ -11,7 +11,7 @@ const ConnectionFailedInfoBlock = () => (
     </div>
     <div className={styles.infoRow}>
       <p>{trans('app.client.server.id')}</p>
-      <p>43e7c67a43e7c67a</p>
+      <p className={styles.infoID}>43e7c67a43e7c67a</p>
     </div>
   </div>
 )

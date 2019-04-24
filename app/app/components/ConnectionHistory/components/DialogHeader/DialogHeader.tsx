@@ -15,7 +15,7 @@ interface IStyles {
 
 const styles = theme => ({
   titleRoot: {
-    padding: 0,
+    padding: '0 !important',
   },
   dialogHeader: {
     display: 'flex',

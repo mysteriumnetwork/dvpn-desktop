@@ -69,6 +69,7 @@ const options: any = {
       buttonText: 14,
     },
     fontFamily: [
+      '"SF Display"',
       '"Open Sans"',
       '"Montserrat"',
       '"Helvetica Neue"',

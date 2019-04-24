@@ -17,15 +17,16 @@ const styles = theme => ({
   textStyled: {
     fontSize: theme.typography.fontSizes.tableHeadFont,
     color: theme.colors.textSecondary,
-    margin: '8px 0',
+    margin: '0.5rem 0',
   },
   action: {
-    margin: '12px auto 0',
+    margin: '1rem auto 0',
     '& > button': {
-      padding: '4px 10px',
-      minHeight: 24,
+      padding: '4px 10px !important',
+      minHeight: '24px !important',
       color: theme.colors.textMain,
       borderRadius: 4,
+      fontSize: '0.75rem !important',
       boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.3)',
       border: 'solid 0.3px rgba(0, 0, 0, 0.1)',
       backgroundImage: theme.colors.greyMain,

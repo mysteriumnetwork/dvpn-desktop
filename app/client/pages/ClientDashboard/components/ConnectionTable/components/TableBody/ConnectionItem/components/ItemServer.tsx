@@ -14,6 +14,7 @@ const styles = theme => ({
     alignItems: 'center',
     '& > p': {
       marginLeft: 8,
+      fontFamily: `'mplus-1m', sans-serif`,
     },
   },
   highlight: {
@@ -38,7 +39,7 @@ const ItemServer: React.SFC<IItemServerProps> = (props: IItemServerProps) => (
       })}
     >
       <div className="flag-icon" />
-      <p>172.93.13.176</p>
+      <p>43e7c6007a</p>
     </div>
   </td>
 )

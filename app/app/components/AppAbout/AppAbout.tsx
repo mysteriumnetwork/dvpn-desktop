@@ -15,12 +15,12 @@ const styles = theme => ({
     padding: 12,
   },
   paperStyled: {
-    overflowY: 'unset',
-    borderRadius: 4,
-    boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.3)',
+    overflowY: 'unset !important',
+    borderRadius: '4px  !important',
+    boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.3) !important',
   },
   rootBackdrop: {
-    background: 'rgba(213, 213, 213, 0.7)',
+    background: 'rgba(213, 213, 213, 0.7) !important',
   },
 })
 
@@ -31,7 +31,7 @@ export interface IAppAboutProps {
 
 class AppAbout extends React.Component<IAppAboutProps> {
   public state = {
-    open: false,
+    open: true,
   }
 
   private handleDialogClose = () => {

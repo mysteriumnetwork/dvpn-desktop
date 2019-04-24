@@ -19,6 +19,10 @@
   font-size: 0.875rem;
 }
 
+.infoID {
+  font-family: 'mplus-1m', sans-serif;
+}
+
 .flagIcon {
   width: 32px;
   height: 32px;
