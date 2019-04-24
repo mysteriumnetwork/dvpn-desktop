@@ -10,7 +10,7 @@ interface IStyles {
   rootBackdrop: string
 }
 
-const styles = theme => ({
+const styles = () => ({
   containerStyled: {
     padding: 12,
   },
@@ -31,7 +31,7 @@ export interface IAppAboutProps {
 
 class AppAbout extends React.Component<IAppAboutProps> {
   public state = {
-    open: true,
+    open: false,
   }
 
   private handleDialogClose = () => {
