@@ -1,8 +1,8 @@
 import * as React from 'react'
 
-const styles = require('./ConnectedImgBlock.scss')
+const styles = require('./ConnectionFailedImgBlock.scss')
 
-const ConnectedImgBlock = () => (
+const ConnectionFailedImgBlock = () => (
   <div className={styles.root}>
     <div className={styles.back} />
     {/* render flag icon */}
@@ -15,4 +15,4 @@ const ConnectedImgBlock = () => (
   </div>
 )
 
-export default ConnectedImgBlock
+export default ConnectionFailedImgBlock

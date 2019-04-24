@@ -1,9 +1,9 @@
 import * as React from 'react'
 import trans from '../../../../../trans'
 
-const styles = require('./ConnectedInfoBlock.scss')
+const styles = require('./ConnectionFailedInfoBlock.scss')
 
-const ConnectedInfoBlock = () => (
+const ConnectionFailedInfoBlock = () => (
   <div className={styles.root}>
     <div className={styles.infoRow}>
       <p>{trans('app.client.external.ip')}</p>
@@ -16,4 +16,4 @@ const ConnectedInfoBlock = () => (
   </div>
 )
 
-export default ConnectedInfoBlock
+export default ConnectionFailedInfoBlock

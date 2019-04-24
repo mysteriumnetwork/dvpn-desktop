@@ -11,7 +11,7 @@ const styles = require('./ClientConnected.scss')
 
 const ClientConnected = () => (
   <div className={styles.root}>
-    <h3 className={styles.title}>{trans('app.client.connecting.title')}</h3>
+    <h3 className={styles.title}>{trans('app.client.connected')}</h3>
     <div>
       <ConnectedImgBlock />
       <ConnectedInfoBlock />

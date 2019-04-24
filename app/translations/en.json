@@ -71,6 +71,10 @@
   "app.client.disconnect.button": "Disconnect",
   "app.client.remove.from.favorites.button": "Remove from Favorites",
   "app.client.add.to.favorites.button": "Add to Favorites",
+  "app.client.retry.button": "Retry",
+  "app.client.go.back.button": "Go Back",
+  "app.client.connection.failed": "Connection Failed",
+  "app.client.connected": "Connected to a Mysterium VPN Node",
 
   "": ""
 }

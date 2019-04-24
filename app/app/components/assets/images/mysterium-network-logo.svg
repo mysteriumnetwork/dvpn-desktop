@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="44px" viewBox="0 0 144 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>mysterium network</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Helvetica" font-size="24" font-weight="normal" letter-spacing="4" line-spacing="28">
+        <g id="4.2-About" transform="translate(-326.000000, -375.000000)" fill="#272265">
+            <g id="About-Modal" transform="translate(220.000000, 169.000000)">
+                <text id="mysterium-network">
+                    <tspan x="67.1835938" y="216.082031">MYSTERIUM</tspan>
+                    <tspan x="81.8535156" y="244.082031">NETWORK</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

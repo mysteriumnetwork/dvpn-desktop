@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
-import { NAV_CLIENT_CONNECTED } from '../../../../../../client.links'
+import { NAV_CLIENT_CONNECTING } from '../../../../../../client.links'
 import trans from '../../../../../../../trans'
 import Button from '../../../../../../../ui-kit/components/Button/Button'
 import CountryItem from './CountryItem'
@@ -18,7 +18,7 @@ const ConnectionBlock = () => (
       </div>
     </div>
     <div className={styles.action}>
-      <Link to={NAV_CLIENT_CONNECTED}>
+      <Link to={NAV_CLIENT_CONNECTING}>
         <Button color="primary">{trans('app.client.dashboard.connect.button')}</Button>
       </Link>
     </div>

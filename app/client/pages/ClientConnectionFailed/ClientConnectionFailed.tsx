@@ -1,29 +1,29 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
-import { NAV_CLIENT_DASHBOARD } from '../../client.links'
+import { NAV_CLIENT_DASHBOARD, NAV_CLIENT_CONNECTING } from '../../client.links'
 import trans from '../../../trans'
 import Button from '../../../ui-kit/components/Button/Button'
+import ConnectionFailedImgBlock from './components/ConnectionFailedImgBlock/ConnectionFailedImgBlock'
+import ConnectionFailedInfoBlock from './components/ConnectionFailedInfoBlock/ConnectionFailedInfoBlock'
 
-// const styles = require('./ProviderDashboard.scss')
+const styles = require('./ClientConnectionFailed.scss')
 
-const ClientConnectionFailed = () => (
-  <div>
+const ConnectionFailed = () => (
+  <div className={styles.root}>
+    <h3 className={styles.title}>{trans('app.client.connection.failed')}</h3>
     <div>
-      <h4>
-        <p>9{trans('app.node.running.users.connected')}</p>
-        <p>
-          9{trans('app.node.running.successful.connections')}
-          <span>/</span>
-          11{trans('app.node.running.attempted')}
-        </p>
-      </h4>
+      <ConnectionFailedImgBlock />
+      <ConnectionFailedInfoBlock />
+    </div>
+    <div className={styles.action}>
+      <Link to={NAV_CLIENT_CONNECTING}>
+        <Button color="primary">{trans('app.client.retry.button')}</Button>
+      </Link>
       <Link to={NAV_CLIENT_DASHBOARD}>
-        <Button variant="contained" color="secondary">
-          Disconnect
-        </Button>
+        <Button color="primary">{trans('app.client.go.back.button')}</Button>
       </Link>
     </div>
   </div>
 )
 
-export default ClientConnectionFailed
+export default ConnectionFailed
