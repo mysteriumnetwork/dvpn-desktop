@@ -3,14 +3,51 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 
+/** Bold */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@font-face {
+  font-family: 'SF Display';
+  font-weight: 700;
+  src: url('https://sf.abarba.me/SF-UI-Display-Bold.otf');
+}
+
+/** Semibold */
+@font-face {
+  font-family: 'SF Display';
+  font-weight: 600;
+  src: url('https://sf.abarba.me/SF-UI-Display-Semibold.otf');
+}
+
+/** Regular */
+@font-face {
+  font-family: 'SF Display';
+  font-weight: 400;
+  src: url('https://sf.abarba.me/SF-UI-Display-Regular.otf');
+}
+
+/** Thin */
+@font-face {
+  font-family: 'SF Display';
+  font-weight: 300;
+  src: url('https://sf.abarba.me/SF-UI-Display-Thin.otf');
+}
+@font-face {
+  font-family: 'mplus-1m';
+  font-weight: 400;
+  src: url('app/components/assets/fonts/mplus-1m-regular.eot'),
+    url('app/components/assets/fonts/mplus-1m-regular.ttf'),
+    url('app/components/assets/fonts/mplus-1m-regular.woff'),
+    url('app/components/assets/fonts/mplus-1m-regular.woff2');
+}
+
 /* Flag icons sprite - will be done on next stage */
 
 /* temporary visualisation */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 .flag-icon {
   width: 24px;
   height: 24px;
-  background: url('app/components/assets/images/flag-icon-temp.svg') no-repeat;
+  background: url('app/components/assets/images/flag-icon-temp.svg') no-repeat center;
+  background-size: contain;
 }
 
 /* Custom icons for checkbox and radiobutton */
@@ -47,11 +84,11 @@
 }
 
 .appMenuIcon {
-  background-position: -1px 0;
+  background-position: 0 0;
 }
 
 .appMenuIcon:hover {
-  background-position: -33px 0;
+  background-position: -32px 0;
 }
 
 .telegram {
@@ -138,6 +175,22 @@
   background-position: -108px 4px;
 }
 
+.all-icon {
+  background-position: 4px -36px;
+}
+
+.all-icon:hover {
+  background-position: -20px -36px;
+}
+
+.fave-icon {
+  background-position: 4px -62px;
+}
+
+.fave-icon:hover {
+  background-position: -20px -62px;
+}
+
 * {
   margin: 0;
   text-decoration: none;
@@ -158,7 +211,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'SF Display', sans-serif;
 }
 
 li {

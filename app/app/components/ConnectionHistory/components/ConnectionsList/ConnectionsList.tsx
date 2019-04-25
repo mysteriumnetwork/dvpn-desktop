@@ -12,7 +12,7 @@ interface IStyles {
 
 const styles = theme => ({
   rootStyled: {
-    padding: 0,
+    padding: '0 !important',
   },
   connectionTable: {
     '& table': {

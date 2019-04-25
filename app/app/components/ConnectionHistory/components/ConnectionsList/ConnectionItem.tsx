@@ -9,6 +9,7 @@ const styles = theme => ({
     display: 'flex',
     '& > p': {
       marginLeft: 8,
+      fontFamily: '"mplus-1m", sans-serif',
     },
   },
 })
@@ -23,7 +24,7 @@ const ConnectionItem: React.SFC<IConnectionItemProps> = (props: IConnectionItemP
     <td>
       <div className={props.classes.ipItem}>
         <div className="flag-icon" />
-        <p>172.93.13.176</p>
+        <p>43e7c67a00</p>
       </div>
     </td>
     <td>2018-12-28 12:21</td>

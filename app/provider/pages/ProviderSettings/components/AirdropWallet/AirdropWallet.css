@@ -54,6 +54,7 @@
 }
 .savedWallet p {
   color: #404040;
+  font-family: 'mplus-1m', sans-serif;
 }
 .savedWallet a {
   display: block;

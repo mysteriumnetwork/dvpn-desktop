@@ -7,7 +7,7 @@ const UserItem = () => (
     <td>
       <div className={styles.ipItem}>
         <div className="flag-icon" />
-        <p>172.93.13.176</p>
+        <p>d617f200</p>
       </div>
     </td>
     <td>00:00:02:15</td>

@@ -21,7 +21,9 @@ const ConnectionInfo = () => (
               <p>172.93.13.176</p>
             </div>
           </td>
-          <td>d617f200ef28a3a3ca2fc78a86d190e5c6f8eb0c</td>
+          <td>
+            <span className={styles.infoID}>d617f200ef28a3a3ca2fc78a86d190e5c6f8eb0c</span>
+          </td>
         </tr>
       </tbody>
     </table>
