@@ -25,6 +25,16 @@ Build package for the current platform
 $ yarn package
 ```
 
+## Run Tequilapi
+
+`chmod +x ./bin/run.sh`
+
+`./bin/run.sh`
+
+### Tequilapi docs
+
+[Docs](https://tequilapi.mysterium.network/)
+
 ## Collaboration guidelines
 
 [Read here](./COLABORATION.md)

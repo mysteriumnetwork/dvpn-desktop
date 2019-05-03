@@ -41,3 +41,5 @@ dll
 
 .idea
 npm-debug.log.*
+
+bin/data/
