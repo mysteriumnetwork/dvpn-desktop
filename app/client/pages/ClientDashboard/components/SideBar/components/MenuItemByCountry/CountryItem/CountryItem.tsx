@@ -12,8 +12,11 @@ interface IStyles {
 
 const styles = theme => ({
   root: {
-    '& > a': {
+    '& > button': {
       width: '100%',
+      outline: 'none',
+      border: 'none',
+      background: 'transparent',
     },
   },
   menuItem: {
@@ -30,8 +33,12 @@ const styles = theme => ({
     '& .itemsCount': {
       position: 'absolute',
       top: 10,
-      right: 14,
+      right: 10,
+      fontSize: 14,
       color: theme.colors.textLightGrey,
+    },
+    '& > p': {
+      fontSize: 14,
     },
   },
   active: {
@@ -52,7 +59,7 @@ export interface IMenuItemProps {
 
 const CountryItem: React.SFC<IMenuItemProps> = (props: IMenuItemProps) => (
   <div className={props.classes.root}>
-    <a href="/">
+    <button type="submit">
       <div
         className={classNames(props.classes.menuItem, {
           // add class active when item selected
@@ -63,7 +70,7 @@ const CountryItem: React.SFC<IMenuItemProps> = (props: IMenuItemProps) => (
         <p>{trans('app.client.side.bar.ireland')}</p>
         <div className="itemsCount">23</div>
       </div>
-    </a>
+    </button>
   </div>
 )
 

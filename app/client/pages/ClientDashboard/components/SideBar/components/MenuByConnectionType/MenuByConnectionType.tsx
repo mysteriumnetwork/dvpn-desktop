@@ -17,8 +17,11 @@ const styles = theme => ({
       fontSize: theme.typography.fontSizes.buttonText,
       color: theme.colors.textLightGrey,
     },
-    '& > a': {
+    '& > button': {
       width: '100%',
+      outline: 'none',
+      border: 'none',
+      background: 'transparent',
     },
   },
   menuItem: {
@@ -51,7 +54,11 @@ const styles = theme => ({
       position: 'absolute',
       top: 10,
       right: 14,
+      fontSize: 14,
       color: theme.colors.textLightGrey,
+    },
+    '& > p': {
+      fontSize: 14,
     },
   },
   active: {
@@ -79,7 +86,7 @@ export interface IMenuItemProps {
 const MenuByConnectionType: React.SFC<IMenuItemProps> = (props: IMenuItemProps) => (
   <div className={props.classes.root}>
     <h3>{trans('app.client.side.bar.by.connection.type')}</h3>
-    <a href="/">
+    <button type="submit">
       <div
         className={classNames(props.classes.menuItem, {
           // add class active when item selected
@@ -90,8 +97,8 @@ const MenuByConnectionType: React.SFC<IMenuItemProps> = (props: IMenuItemProps) 
         <p>WireGuard</p>
         <div className="itemsCount">1</div>
       </div>
-    </a>
-    <a href="/">
+    </button>
+    <button type="submit">
       <div
         className={classNames(props.classes.menuItem, {
           // add class active when item selected
@@ -102,7 +109,7 @@ const MenuByConnectionType: React.SFC<IMenuItemProps> = (props: IMenuItemProps) 
         <p>OpenVPN</p>
         <div className="itemsCount">2</div>
       </div>
-    </a>
+    </button>
   </div>
 )
 
