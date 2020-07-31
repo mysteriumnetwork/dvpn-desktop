@@ -1,3 +1,5 @@
+> :no_entry: &nbsp; **This app is deprecated. Please use [mysterium-vpn-desktop](https://github.com/mysteriumnetwork/mysterium-vpn-desktop) instead!**
+
 # Mysterium VPN: Decentralized VPN client
 
 [![Build Status](https://travis-ci.com/mysteriumnetwork/dvpn-desktop.svg?branch=master)](https://travis-ci.com/mysteriumnetwork/dvpn-desktop)
